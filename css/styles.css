@@ -38,7 +38,7 @@ html {
 /* Light mode cursor */
 
 html {
-cursor: url('/assets/graphics/point_light.svg') 12 -12, auto;
+cursor: url('/assets/graphics/point_light.svg') 5 -12, auto;
 }
 
 html a:hover,
@@ -47,12 +47,12 @@ html a:hover,
 .progress input,
 .progress input::-moz-range-thumb,
 .progress input::-webkit-slider-thumb {
-    cursor: url('/assets/graphics/hover_light.svg') 12 -12, auto !important;
+    cursor: url('/assets/graphics/hover_light.svg') 5 -12, auto !important;
 }
 
 /* Dark mode cursor */
 html.dark-mode {
-    cursor: url('/assets/graphics/point_dark.svg') 12 -12, auto;
+    cursor: url('/assets/graphics/point_dark.svg') 5 -12, auto;
 }
 
 .dark-mode a:hover,
@@ -61,7 +61,7 @@ html.dark-mode {
 .dark-mode .progress input,
 .dark-mode .progress input::-moz-range-thumb,
 .dark-mode .progress input::-webkit-slider-thumb {
-    cursor: url('/assets/graphics/hover_dark.svg') 12 -12, auto !important;
+    cursor: url('/assets/graphics/hover_dark.svg') 5 -12, auto !important;
 }
 
 body {

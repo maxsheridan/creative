@@ -1,5 +1,3 @@
-/* Structure */
-
 .page {
     position: absolute;
     top: 0;
@@ -97,10 +95,6 @@ span {
 
 .scroll-cue p {
     color: var(--accent-color);
-}
-
-.scroll-arrow {
-    margin-bottom: -.1rem;
 }
 
 .scroll-arrow {
