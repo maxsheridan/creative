@@ -1,24 +1,19 @@
-/* Structure */
 
-.page {
+.page-inner {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100% !important;
+    width: 100vw;
     min-height: 100vh;
-    min-height: 100dvh;
-    padding: 8rem 3.5rem; 
+    padding: 8rem 1rem;
 }
 
 .text {
     max-width: 39.75rem;
 }
 
-/*Mobile*/
-
-@media screen and (max-width: 768px) {    
-    .page {
+@media only screen and (max-width: 768px) {
+    .page-inner {
         display: block;
-        padding: 8rem 1rem;
     }
 }
