@@ -80,13 +80,6 @@ video {
     object-fit: cover;
 }
 
-hr {
-    height: 1px;
-    margin: 1.75rem 0; 
-    border: 0;
-    background: var(--accent-color);
-}
-
 /* Classes */
 
 svg.arrow-upper-right {
