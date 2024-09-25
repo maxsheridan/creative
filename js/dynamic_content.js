@@ -1,29 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Function to load the content dynamically and apply the correct stylesheet
+    // Function to load the content dynamically
     function loadContent(page) {
         fetch(`/${page}.html`)
             .then(response => response.text())
             .then(data => {
                 document.getElementById('dynamic-content').innerHTML = data;
 
-                // Remove any existing page-specific stylesheet
-                const existingStyle = document.getElementById('page-style');
-                if (existingStyle) {
-                    existingStyle.remove();
+                // Disable all page-specific stylesheets
+                document.querySelectorAll('link[id$="-style"]').forEach(link => {
+                    link.disabled = true;
+                });
+
+                // Enable the current page's stylesheet
+                const activeStyle = document.getElementById(`${page}-style`);
+                if (activeStyle) {
+                    activeStyle.disabled = false;
                 }
 
-                // Load the correct stylesheet for the current page
-                const link = document.createElement('link');
-                link.rel = 'stylesheet';
-                link.href = `/css/${page}.css`;
-                link.id = 'page-style';
-                document.head.appendChild(link);
-
-                // Wait for the CSS and content to fully load before reinitializing scroll
-                setTimeout(() => {
-                    currentPos = 0;
-                    init(); // Reinitialize scroll logic after the content is fully loaded
-                }, 100); // Slight delay to ensure layout is ready
+                // Reset scroll position and reinitialize scroll behavior
+                currentPos = 0;
+                init(); // Always reinitialize scroll logic after loading new content
             })
             .catch(error => console.error('Error loading content:', error));
     }
