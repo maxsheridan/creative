@@ -1,4 +1,76 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Function to initialize the video player
+    function initVideoPlayer() {
+        const video = document.getElementById("video");
+        const playPauseButton = document.getElementById("play-pause");
+        const progressBar = document.getElementById("progress");
+        const progressFilled = document.getElementById("progress-filled");
+
+        if (!video || !playPauseButton || !progressBar || !progressFilled) {
+            return; // Exit if video elements are not found
+        }
+
+        function togglePlayPause() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+            updatePlayPauseAriaLabel();
+        }
+
+        function updatePlayPauseButton() {
+            if (video.paused) {
+                playPauseButton.classList.remove("pause");
+                playPauseButton.classList.add("play");
+            } else {
+                playPauseButton.classList.remove("play");
+                playPauseButton.classList.add("pause");
+            }
+        }
+
+        function updatePlayPauseAriaLabel() {
+            if (video.paused) {
+                playPauseButton.setAttribute("aria-label", "Play video");
+            } else {
+                playPauseButton.setAttribute("aria-label", "Pause video");
+            }
+        }
+
+        function updateProgress() {
+            const progress = (video.currentTime / video.duration) * 100;
+            progressFilled.style.width = `${progress}%`;
+            progressBar.value = progress;
+        }
+
+        function seekVideo() {
+            const seekTime = (progressBar.value / 100) * video.duration;
+            video.currentTime = seekTime;
+            updateProgress();
+        }
+
+        playPauseButton.addEventListener("click", togglePlayPause);
+        video.addEventListener("play", updatePlayPauseButton);
+        video.addEventListener("pause", updatePlayPauseButton);
+        video.addEventListener("play", updatePlayPauseAriaLabel);
+        video.addEventListener("pause", updatePlayPauseAriaLabel);
+        video.addEventListener("timeupdate", updateProgress);
+        progressBar.addEventListener("input", seekVideo);
+        progressBar.addEventListener("change", updateProgress);
+        progressBar.addEventListener("touchstart", (e) => {
+            const touch = e.touches[0];
+            const seekTime = ((touch.clientX - progressBar.getBoundingClientRect().left) / progressBar.offsetWidth) * video.duration;
+            video.currentTime = seekTime;
+            updateProgress();
+        });
+        progressBar.addEventListener("touchmove", (e) => {
+            const touch = e.touches[0];
+            const seekTime = ((touch.clientX - progressBar.getBoundingClientRect().left) / progressBar.offsetWidth) * video.duration;
+            video.currentTime = seekTime;
+            updateProgress();
+        });
+    }
+
     // Function to load the content dynamically
     function loadContent(page) {
         fetch(`/${page}.html`)
@@ -20,6 +92,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Reset scroll position and reinitialize scroll behavior
                 currentPos = 0;
                 init(); // Always reinitialize scroll logic after loading new content
+
+                // Initialize video player after content is loaded
+                initVideoPlayer();
             })
             .catch(error => console.error('Error loading content:', error));
     }
