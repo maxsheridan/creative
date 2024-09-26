@@ -149,8 +149,8 @@ li {
     margin: 1rem 0 0;
 }
 
-li a {
-    border-bottom: 1px solid var(--accent-color) !important;
+p a, li a {
+    border-bottom: 1.5px solid var(--accent-color) !important;
 }
 
 b,
