@@ -156,7 +156,7 @@ video {
 .dark-mode .play-pause {
 	background-image: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><polygon fill='%23111' points='10,6.9 10,23.1 24,15'/></svg>");
 	/* Offsets size */
-	background-size: 80%;
+	background-size: 75%;
 }
 
 .dark-mode .play-pause.pause {
