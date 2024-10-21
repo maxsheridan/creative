@@ -41,12 +41,7 @@ html {
 cursor: url('/assets/graphics/point_light.svg') 5 -12, auto;
 }
 
-html a:hover,
-.dark-mode-toggle svg:hover,
-.play-pause,
-.progress input,
-.progress input::-moz-range-thumb,
-.progress input::-webkit-slider-thumb {
+html a:hover, .dark-mode-toggle svg:hover, .play-pause, .progress input, .progress input::-moz-range-thumb, .progress input::-webkit-slider-thumb {
     cursor: url('/assets/graphics/hover_light.svg') 5 -12, auto !important;
 }
 
@@ -55,12 +50,7 @@ html.dark-mode {
     cursor: url('/assets/graphics/point_dark.svg') 5 -12, auto;
 }
 
-.dark-mode a:hover,
-.dark-mode .dark-mode-toggle svg:hover,
-.dark-mode .play-pause,
-.dark-mode .progress input,
-.dark-mode .progress input::-moz-range-thumb,
-.dark-mode .progress input::-webkit-slider-thumb {
+.dark-mode a:hover, .dark-mode .dark-mode-toggle svg:hover, .dark-mode .play-pause, .dark-mode .progress input, .dark-mode .progress input::-moz-range-thumb, .dark-mode .progress input::-webkit-slider-thumb {
     cursor: url('/assets/graphics/hover_dark.svg') 5 -12, auto !important;
 }
 
