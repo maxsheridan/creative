@@ -216,8 +216,8 @@ video {
     }
 
     .section {
-        min-height: unset;
-        padding: 6rem 1rem;
+        min-height: 0dvh;
+        padding: 4rem 1rem;
         border-bottom: 2px solid var(--primary-color);
         border-right: none;
     }
