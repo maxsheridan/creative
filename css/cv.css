@@ -117,7 +117,7 @@ span {
     .section {
         min-height: 0dvh; /* Keeps page from moving */ 
         padding: 4rem 1rem;
-        border-bottom: 1px solid var(--primary-color);
+        border-bottom: 2px solid var(--primary-color);
         border-right: none;
     }
 
