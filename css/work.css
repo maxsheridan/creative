@@ -216,7 +216,7 @@ video {
     }
 
     .section {
-        min-height: 0dvh;
+        min-height: 0dvh; /*Keeps page from moving*/ 
         padding: 4rem 1rem;
         border-bottom: 2px solid var(--primary-color);
         border-right: none;

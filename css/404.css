@@ -111,9 +111,9 @@ svg.arrow-right {
     align-items: center;
     position: relative;
     width: 100%;
-    min-height: 100vh; /*allows full height*/
+    min-height: 100vh; /* Allows full height */
     min-height: 100dvh; 
-    margin: auto 0; /*keeps content within viewport*/
+    margin: auto 0; /* Keeps content within viewport */
     background-color: var(--background-color);
 }
 

@@ -25,9 +25,9 @@
     align-items: center;
     position: relative;
     width: 100%;
-    min-height: 100vh; /*allows full height*/
+    min-height: 100vh; /* Allows full height */
     min-height: 100dvh;
-    margin: auto 0; /*keeps content within viewport*/
+    margin: auto 0; /* Keeps content within viewport */
     border-right: 1px solid var(--accent-color);
 }
 
@@ -115,7 +115,7 @@ span {
     }
 
     .section {
-        min-height: unset;
+        min-height: 0dvh; /* Keeps page from moving */ 
         padding: 4rem 1rem;
         border-bottom: 1px solid var(--primary-color);
         border-right: none;
