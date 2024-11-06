@@ -30,11 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         function updatePlayPauseAriaLabel() {
-            if (video.paused) {
-                playPauseButton.setAttribute("aria-label", "Play video");
-            } else {
-                playPauseButton.setAttribute("aria-label", "Pause video");
-            }
+            playPauseButton.setAttribute("aria-label", video.paused ? "Play video" : "Pause video");
         }
 
         function updateProgress() {
@@ -71,12 +67,18 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Function to load the content dynamically
+    // Function to load content dynamically and set the document title
     function loadContent(page) {
         fetch(`/${page}.html`)
             .then(response => response.text())
             .then(data => {
                 document.getElementById('dynamic-content').innerHTML = data;
+
+                // Update the page title if title information is in the loaded content
+                const titleMatch = data.match(/<title>(.*?)<\/title>/);
+                if (titleMatch) {
+                    document.title = titleMatch[1]; // Set document title directly from loaded content
+                }
 
                 // Disable all page-specific stylesheets
                 document.querySelectorAll('link[id$="-style"]').forEach(link => {
@@ -91,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Reset scroll position and reinitialize scroll behavior
                 currentPos = 0;
-                init(); // Always reinitialize scroll logic after loading new content
+                init(); // Reinitialize scroll logic after loading new content
 
                 // Initialize video player after content is loaded
                 initVideoPlayer();
