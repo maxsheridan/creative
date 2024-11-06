@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Function to initialize the video player
+    // Initialize video player
     function initVideoPlayer() {
         const video = document.getElementById("video");
         const playPauseButton = document.getElementById("play-pause");
@@ -30,7 +30,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         function updatePlayPauseAriaLabel() {
-            playPauseButton.setAttribute("aria-label", video.paused ? "Play video" : "Pause video");
+            if (video.paused) {
+                playPauseButton.setAttribute("aria-label", "Play video");
+            } else {
+                playPauseButton.setAttribute("aria-label", "Pause video");
+            }
         }
 
         function updateProgress() {
@@ -67,25 +71,19 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Function to load content dynamically and set the document title
+    // Load content dynamically
     function loadContent(page) {
         fetch(`/${page}.html`)
             .then(response => response.text())
             .then(data => {
                 document.getElementById('dynamic-content').innerHTML = data;
 
-                // Update the page title if title information is in the loaded content
-                const titleMatch = data.match(/<title>(.*?)<\/title>/);
-                if (titleMatch) {
-                    document.title = titleMatch[1]; // Set document title directly from loaded content
-                }
-
-                // Disable all page-specific stylesheets
+                // Disable page-specific stylesheets
                 document.querySelectorAll('link[id$="-style"]').forEach(link => {
                     link.disabled = true;
                 });
 
-                // Enable the current page's stylesheet
+                // Enable current page's stylesheet
                 const activeStyle = document.getElementById(`${page}-style`);
                 if (activeStyle) {
                     activeStyle.disabled = false;
@@ -93,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Reset scroll position and reinitialize scroll behavior
                 currentPos = 0;
-                init(); // Reinitialize scroll logic after loading new content
+                init(); // Always reinitialize scroll logic after loading new content
 
                 // Initialize video player after content is loaded
                 initVideoPlayer();
@@ -109,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const page = this.getAttribute('data-page');
             loadContent(page);
 
-            // Optionally, update the active class for the clicked link
+            // Update active class for clicked link
             links.forEach(link => link.classList.remove('active'));
             this.classList.add('active');
         });
