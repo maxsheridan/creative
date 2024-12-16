@@ -4,22 +4,15 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
-        <meta name="color-scheme" content="light only">
-        <link rel="preload" as="image" href="/assets/images/misfit_union.webp" type="image/webp" fetchpriority="high">
-        <link rel="preload" as="font" href="/assets/type/ABC_Diatype.woff2" type="font/woff2" crossorigin=”anonymous” fetchpriority="high">
-        <link rel="preload" as="font" href="/assets/type/ABC_Diatype_Medium.woff2" type="font/woff2" crossorigin=”anonymous” fetchpriority="high">
-        <link rel="preload" as="image" href="/assets/graphics/hover_light.svg" type="image/svg+xml" fetchpriority="high">
+        <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href="/css/styles.css">
-        <link rel="stylesheet" href="/css/work.css" id="work-style">
-        <link rel="stylesheet" href="/css/info.css" id="info-style">
-        <link rel="stylesheet" href="/css/cv.css" id="cv-style">
-        <link rel="stylesheet" href="/css/faq.css" id="faq-style">
-        <title>Max Sheridan</title>
+        <link rel="stylesheet" href="/css/work.css">
         <link rel="icon" sizes="32x32" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" sizes="any" href="/favicon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png" type="image/png">
         <link rel="manifest" href="/manifest.json" type="application/json">
         <link rel="canonical" href="https://creative.maxsheridan.com">
+        <title>Max Sheridan</title>
         <meta name="description" content="Story-driven copywriting for web and print.">
         <meta name="thumbnail" content="https://creative.maxsheridan.com/assets/graphics/share.webp">
         <meta property="og:site_name" content="creative.maxsheridan.com">
@@ -37,29 +30,213 @@
                 <a href="/">Max Sheridan</a>
             </nav>
             <nav class="links">
-                <a href="#" data-page="work" class="active">Work</a>
-                <a href="#" data-page="info">Info</a>
-                <a href="#" data-page="cv">CV</a>
-                <a href="#" data-page="faq">FAQ</a>
+                <a href="/">Work</a>
+                <a href="/info">Info</a>
+                <a href="/cv">CV</a>
+                <a href="/faq">FAQ</a>
             </nav>
         </header>
         <main>
-            <div id="dynamic-content" class="page"></div> <!-- Placeholder for dynamically loaded content -->
+            <div id="work" class="page">
+                <div class="page-inner">
+                    <section class="section" id="misfit-union">
+                        <div class="section-inner">
+                            <div class="image">
+                                <img class="portrait" src="/assets/images/misfit_union.webp" alt="Yellow on green Misfit Union Doypack (pouch)" width="558" height="750" fetchpriority="high" loading="eager">
+                            </div>
+                            <div class="text">
+                                <div class="description">
+                                    <h1>Misfit Union</h1>
+                                    <h2>Package Copy</h2>
+                                    <p>An edgy brand story for a maverick start-up on a mission to change the way people bought and consumed food. Package design by RTD.
+                                    </p>
+                                    <hr>
+                                </div>    
+                                <div class="quote">
+                                    <h3>“Way to go, misfit. You’ve just saved the planet 9 truck trips and made a local farmer happy. And you’re eating good, clean, hand-prepared food that doesn’t come with any ingredients you can’t pronounce. So happy, healthy eating. Enjoy every ounce of this nutrition-packed meal before you recycle our eco-package. Try a new combi­nation every time. And, please, you keep doing you. Don’t fit in. Join the evolution.”</h3>
+                                </div>
+                            </div>
+                            <div class="scroll-cue">
+                                <p>This way
+                                    <svg class="scroll-arrow" width="14" height="12" viewBox="0 0 16 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                                        <g transform="matrix(1.89324,0,0,1.88928,0.701615,-1.06839)">
+                                            <path d="M3.58,7.023L4.715,7.023L7.948,3.8L4.715,0.565L3.58,0.565L6.384,3.369L0.431,3.369L0.431,4.23L6.384,4.23L3.58,7.023Z" style="fill: var(--accent-color);fill-rule:nonzero;"/>
+                                        </g>
+                                    </svg>
+                                </p>
+                            </div>
+                        </div> 
+                    </section>
+                    <section class="section" id="tekton">
+                        <div class="section-inner">
+                            <div class="image">
+                                <div class="video-player">
+                                    <video id="video" src="/assets/video/code_free_algotrading.mp4" poster="/assets/images/tekton.webp" title="Shaved and Waxed by Max Sheridan" type="video/mp4">
+                                    <track kind="captions" srclang="en" label="English" default>Your browser does not support the video tag.    
+                                    </video>
+                                    <div class="controls">
+                                        <button id="play-pause" class="play-pause play" aria-label="Play video"></button>
+                                        <div class="progress">
+                                            <div class="progress-filled" id="progress-filled"></div>
+                                            <input type="range" id="progress" value="0" max="100" aria-label="Progress">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <div class="description">
+                                    <h1>Tekton</h1>
+                                    <h2>Video Script</h2>
+                                    <p>Making fiendishly difficult math simple and hip. The talented folks at Navajo Digital made this video from my script. Play it!
+                                    </p>
+                                </div>     
+                            </div>
+                        </div> 
+                    </section>
+                    <section class="section" id="reforest-nicosia">
+                        <div class="section-inner">
+                            <div class="image">
+                                <img class="landscape" src="/assets/images/reforest_nicosia.webp" alt="Reforest Nicosia website" width="900" height="675" loading="lazy">
+                            </div>    
+                            <div class="text">
+                                <div class="description">
+                                    <h1>Reforest Nicosia</h1>
+                                    <h2>Brand Voice</h2>
+                                    <p>One part Don’t Look Up, three parts hard hope, Reforest Nicosia’s new brand voice (and its awesome new website) is kickstarting the fight against climate change in one of Europe’s least green capitals.
+                                    </p>
+                                </div>    
+                                <hr>
+                                <div class="quote">
+                                    <h3>“We’re Reforest Nicosia, a grassroots team of local organisers, environ&shy;mental experts, and community volunteers. We’ve planted over 10,000 trees in the wider Nicosia area so far. Our goal is to plant 300,000 — one tree for every resident of the city. (That’s you!) Join our effort to save the planet. Help us green Cyprus.”</h3>
+                                </div>
+                            </div>
+                        </div> 
+                    </section>
+                    <section class="section" id="medovie">
+                        <div class="section-inner">
+                            <div class="image">
+                                <img class="portrait" src="/assets/images/medovie.webp" alt="Medovie copywriting samples" width="1300" height="1082" loading="lazy">
+                            </div>
+                            <div class="text">
+                                <div class="description">
+                                    <h1>Medovie</h1>
+                                    <h2>Copywriting</h2>
+                                    <p>The story of a natural skincare company told from start to finish over four weeks and 400 cups of coffee. Deliverables ran the gamut: website and package copy, articles, user stories, social media, marketing emails, video scripts, and a ton of micro­copy.</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </section>
+                    <section class="section" id="boc">
+                        <div class="section-inner">
+                            <div class="image">
+                                <img class="landscape" src="/assets/images/boc.webp"  alt="Screens from Bank of Cyprus mobile app" width="1300" height="798" loading="lazy">
+                            </div>
+                            <div class="text">
+                                <div class="description">
+                                    <h1>Bank of Cyprus</h1>
+                                    <h2>UX Writing</h2>
+                                    <p>A refresh of a popular banking app with oodles of micro­copy that needed a pin&shy;point user journey.
+                                    </p>
+                                </div>
+                            </div>
+                        </div> 
+                    </section>
+                    <section class="section" id="becca-europe">
+                        <div class="section-inner">
+                            <div class="image">
+                                <img class="landscape" src="/assets/images/becca_europe.webp" alt="BECCA Europe graphic featuring a cut-out of a female singer and text" width="800" height="810" loading="lazy">
+                            </div>
+                            <div class="text">
+                                <div class="description">
+                                    <h1>BECCA Europe</h1>
+                                    <h2>Creative Direction</h2>
+                                    <p>A total rebrand of an established creative arts funding consultancy with a focus on stories, not stats. Deliverables included image identity, website design and copy, and newsletters. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div> 
+                    </section>
+                    <section class="section" id="wp-clone">
+                        <div class="section-inner">
+                            <div class="image">
+                                <img class="landscape" src="/assets/images/wp_clone.webp" alt="Content from the WP Clone website" width="1300" height="920" loading="lazy">
+                            </div>
+                            <div class="text">
+                                <div class="description">
+                                    <h1>WP Clone</h1>
+                                    <h2>Website Writing</h2>
+                                    <p>Helping an SaaS start-up with a highly technical audience get their selling points across without sounding like an IT manual.
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="quote">
+                                    <h3>“Sock-rocking WordPress management bundles that will make your wallet happy.”</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section" id="centerfield">
+                        <div class="section-inner">
+                            <div class="image">
+                                <img class="landscape" src="/assets/images/longform.webp" alt="Photo illustration of influencers sitting on a huge mobile phone accumulating likes" width="800" height="600" loading="lazy"> 
+                            </div>                 
+                            <div class="text" style="max-width: 42rem;">
+                                <div class="description">
+                                    <h1>Centerfield Media</h1>
+                                    <h2>Content Writing</h2>
+                                    <div style="margin-bottom: 1rem;">
+                                        <p>I’ve written a lot of stories over the years, under my own name and as a ghost&shy;writer. Here are a few links to my latest work at Centerfield Media. To see more examples of my work, head on over to <a href="https://medium.com/copy-cat" target="_blank">Copy Cat</a>. (The little 👻 means I wrote it but you won’t see my name on it.)</p>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.safehome.org/home-security-cameras/turn-old-phone-into-security-camera/" target="_blank">How to Turn Your Old Phone Into a Home Security Camera&#32;<svg class="arrow-upper-right"  width="100%" height="100%" viewBox="0 0 173 172" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(24.5855,0,0,24.5855,-13.5712,-19.4717)"><path d="M1.248,7.788L6.672,2.388L6.672,6.876L7.56,5.988L7.56,0.792L2.34,0.792L1.452,1.668L5.976,1.668L0.552,7.104L1.248,7.788Z" style="fill-rule:nonzero;"/></g></svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.safehome.org/news/stop-holiday-package-theft/" target="_blank">Is Your Home a Magnet for Porch Pirates? 👻&#32;<svg class="arrow-upper-right"  width="100%" height="100%" viewBox="0 0 173 172" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(24.5855,0,0,24.5855,-13.5712,-19.4717)"><path d="M1.248,7.788L6.672,2.388L6.672,6.876L7.56,5.988L7.56,0.792L2.34,0.792L1.452,1.668L5.976,1.668L0.552,7.104L1.248,7.788Z" style="fill-rule:nonzero;"/></g></svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.safehome.org/news/ai-phishing-scams/" target="_blank">The Shocking New ChatGPT Scam to Look Out for&#32;<svg class="arrow-upper-right"  width="100%" height="100%" viewBox="0 0 173 172" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(24.5855,0,0,24.5855,-13.5712,-19.4717)"><path d="M1.248,7.788L6.672,2.388L6.672,6.876L7.56,5.988L7.56,0.792L2.34,0.792L1.452,1.668L5.976,1.668L0.552,7.104L1.248,7.788Z" style="fill-rule:nonzero;"/></g></svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.safehome.org/news/common-holiday-scams/" target="_blank">Twas the Night Before Christmas and the Cybercriminals Were Stirring&#32;<svg class="arrow-upper-right"  width="100%" height="100%" viewBox="0 0 173 172" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(24.5855,0,0,24.5855,-13.5712,-19.4717)"><path d="M1.248,7.788L6.672,2.388L6.672,6.876L7.56,5.988L7.56,0.792L2.34,0.792L1.452,1.668L5.976,1.668L0.552,7.104L1.248,7.788Z" style="fill-rule:nonzero;"/></g></svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.safehome.org/news/celebrity-home-security-systems/" target="_blank">These Celebrity Home Security Systems Will Blow Your Mind 👻&#32;<svg class="arrow-upper-right"  width="100%" height="100%" viewBox="0 0 173 172" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(24.5855,0,0,24.5855,-13.5712,-19.4717)"><path d="M1.248,7.788L6.672,2.388L6.672,6.876L7.56,5.988L7.56,0.792L2.34,0.792L1.452,1.668L5.976,1.668L0.552,7.104L1.248,7.788Z" style="fill-rule:nonzero;"/></g></svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section" id="contact">
+                        <div class="section-inner description">
+                            <div class="description" style="text-align: center;">
+                                <h1>Contact</h1>
+                                <p style="text-decoration: none;">max@maxsheridan.com</p>
+                                <p style="text-decoration: none;">+357 96440814</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
         </main>
         <footer>
             <div class="dark-mode-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                    <path d="M235.54,150.21a104.84,104.84,0,0,1-37,52.91A104,104,0,0,1,32,120,103.09,103.09,0,0,1,52.88,57.48a104.84,104.84,0,0,1,52.91-37,8,8,0,0,1,10,10,88.08,88.08,0,0,0,109.8,109.8,8,8,0,0,1,10,10Z"/>
-                </svg>
+                Dark
             </div>
             <div class="copyright">
                 <p>©24MS
                 </p>
             </div>
         </footer>
-        <script src="/js/dynamic_content.js" defer></script>
         <script src="/js/scroll.js" defer></script>
-        <script src="/js/linkstyling.js" defer></script>
         <script src="/js/dark_mode.js" defer></script>
         <script type="application/ld+json">
             {
