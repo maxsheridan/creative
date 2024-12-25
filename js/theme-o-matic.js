@@ -1,0 +1,3 @@
+var currentPath=window.location.pathname;var navLinks=document.querySelectorAll(".links a");navLinks.forEach(function(t){if(t.getAttribute("href")===currentPath){t.classList.add("active")}})
+    
+let currentThemeSetting=localStorage.getItem("theme")||"light";document.querySelector("html").setAttribute("data-theme",currentThemeSetting);const button=document.querySelector("[data-theme-o-matic]");button.addEventListener("click",(()=>{const t="dark"===currentThemeSetting?"light":"dark",e="dark"===t?"Light":"Dark";button.innerText=e,document.querySelector("html").setAttribute("data-theme",t),localStorage.setItem("theme",t),currentThemeSetting=t}));
