@@ -1,15 +1,18 @@
-// Check if the user is opening a new tab
-let currentThemeSetting = localStorage.getItem("theme");
+// Set a default theme in the <html> tag immediately
+const initialTheme = localStorage.getItem("theme") || "light";
+document.documentElement.setAttribute("data-theme", initialTheme);
 
-// If no theme is set (new tab or no prior visit), default to "light"
+// Detect if it's a fresh tab (new session)
 if (!sessionStorage.getItem("visited")) {
-    currentThemeSetting = "light";
     sessionStorage.setItem("visited", "true");
+    // Override to default to light mode on fresh tabs
+    document.documentElement.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light");
 }
 
-// Apply the current theme setting
+// JavaScript function to apply a theme
 function applyTheme(theme) {
-    document.querySelector("html").setAttribute("data-theme", theme);
+    document.documentElement.setAttribute("data-theme", theme);
     const button = document.querySelector("[data-theme-o-matic]");
     if (button) {
         button.innerText = theme === "dark" ? "Light" : "Dark";
@@ -20,21 +23,21 @@ function applyTheme(theme) {
     }
 }
 
-// Apply the theme on page load
-applyTheme(currentThemeSetting);
+// Apply the initial theme
+applyTheme(initialTheme);
 
-// Set up the theme toggle button
+// Add event listener for theme toggle button
 const button = document.querySelector("[data-theme-o-matic]");
 if (button) {
     button.addEventListener("click", () => {
-        const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
+        const newTheme = initialTheme === "dark" ? "light" : "dark";
         localStorage.setItem("theme", newTheme);
-        currentThemeSetting = newTheme;
+        sessionStorage.setItem("visited", "true"); // Update session flag
         applyTheme(newTheme);
     });
 }
 
-// Reapply the theme during back/forward navigation
+// Handle back/forward navigation to maintain theme
 window.addEventListener("pageshow", () => {
     const savedTheme = localStorage.getItem("theme") || "light";
     applyTheme(savedTheme);
