@@ -1,6 +1,13 @@
-// Ensure the theme is applied immediately upon page load
-let currentThemeSetting = localStorage.getItem("theme") || "light";
+// Check if the user is opening a new tab
+let currentThemeSetting = localStorage.getItem("theme");
 
+// If no theme is set (new tab or no prior visit), default to "light"
+if (!sessionStorage.getItem("visited")) {
+    currentThemeSetting = "light";
+    sessionStorage.setItem("visited", "true");
+}
+
+// Apply the current theme setting
 function applyTheme(theme) {
     document.querySelector("html").setAttribute("data-theme", theme);
     const button = document.querySelector("[data-theme-o-matic]");
@@ -13,7 +20,7 @@ function applyTheme(theme) {
     }
 }
 
-// Apply the stored theme on page load
+// Apply the theme on page load
 applyTheme(currentThemeSetting);
 
 // Set up the theme toggle button
@@ -27,7 +34,7 @@ if (button) {
     });
 }
 
-// Ensure the theme persists when using back/forward navigation
+// Reapply the theme during back/forward navigation
 window.addEventListener("pageshow", () => {
     const savedTheme = localStorage.getItem("theme") || "light";
     applyTheme(savedTheme);
