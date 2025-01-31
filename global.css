@@ -226,8 +226,8 @@ footer {
 }
 
 .toggle-thingy {
-    width: 23px;
-    height: 23px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
 }
 
@@ -262,8 +262,8 @@ html[data-force-color-mode="light"] {
         scrollbar-width: unset
     }
     .toggle-thingy {
-        width: 21px;
-        height: 21px;
+        width: 22px;
+        height: 22px;
         cursor: pointer;
     }
 }
