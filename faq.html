@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
         <meta name="color-scheme" content="light dark">
+        <script>const colorModeOverride=window.localStorage.getItem('color-mode');const hasColorModeOverride=typeof colorModeOverride==='string';if(hasColorModeOverride){document.documentElement.setAttribute('data-force-color-mode',colorModeOverride)}</script>
         <link rel="stylesheet" href="/global.css" as="text/css">
         <link rel="icon" sizes="32x32" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" sizes="any" href="/favicon.svg" type="image/svg+xml">
@@ -100,14 +101,23 @@
             </div>
         </main>
         <footer>
-            <div class="theme-button">
-                <button type="button" class="theme-o-matic" data-theme-o-matic aria-label="Change to light theme">
-                    Dark
-                </button>
-                <noscript>
-                    <p style="padding-left: .5rem; color: var(--accent-color)">Yikes! Turn on JavaScript.</p>
-                </noscript>
+            <div id="acme-all-purpose-theme-toggle-wrapper">
+                <label id="theme-o-matic">
+                    <svg class="inline-graphic toggle-thingy moon" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 256 256">
+                        <path fill="none" d="M0 0h256v256H0z"/>
+                        <path d="M108.11 28.11a96.09 96.09 0 0 0 119.78 119.78A96 96 0 1 1 108.11 28.11" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+                    </svg>
+                    <svg class="inline-graphic toggle-thingy sun" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 256 256">
+                        <path fill="none" d="M0 0h256v256H0z"/>
+                        <path fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="18" d="M128 40V16"/>
+                        <circle cx="128" cy="128" r="56" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+                        <path fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="18" d="M64 64 48 48m16 144-16 16M192 64l16-16m-16 144 16 16M40 128H16m112 88v24m88-112h24"/>
+                    </svg>
+                </label>
             </div>
+            <noscript>
+                <p style="padding-left: .5rem; color: var(--accent-color)">Yikes! Turn on JavaScript.</p>
+            </noscript>
             <div class="copyright">
                 <p>©25MS
                 </p>
