@@ -306,7 +306,7 @@ video {
     )
 }
     
-.arrow-up-rgt {
+.arrow-up-rgt,.arrow-right {
     width:auto;
     height:clamp(13px,2vw,14px)
 }
