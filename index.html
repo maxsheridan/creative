@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" data-force-color-mode="light">
+<html lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
         <link rel="preload" href="/assets/images/misfit_union.webp" as="image">
         <link rel="preload" href="/assets/type/ABC_Diatype_Medium.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="/assets/type/ABC_Diatype.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="stylesheet" href="/global.css" as="text/css">
+        <link rel="stylesheet" href="/style.css" as="text/css">
         <link rel="icon" sizes="32x32" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" sizes="any" href="/favicon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png" type="image/png">
@@ -26,600 +26,275 @@
         <meta property="og:image:type" content="image/webp">
         <meta property="og:image:width" content="720">
         <meta property="og:image:height" content="720">
+        <style>.controls{display:flex;align-items:center;margin-block-start:1rem}.play-pause{display:flex;align-items:center;justify-content:center;width:22px;height:22px;margin-right:.5rem;padding:0;border:0;border-radius:50%;background-color:var(--accent-color);cursor:pointer}.play-pause .icon{width:75%;height:75%}.play-pause.play .icon polygon{fill:var(--background-color)}.play-pause.pause .icon rect{fill:var(--background-color)}.progress{position:relative;flex:1;height:2px;background-color:var(--progress-color);cursor:pointer}.progress-filled{width:0%;height:100%;background-color:var(--accent-color)}.progress input{position:absolute;top:-.45rem;width:100%;height:16px;margin:0;border:0;background:#fff0;-webkit-appearance:none;-moz-appearance:none;appearance:none;cursor:auto;}.progress input::-webkit-slider-thumb{width:10px;height:10px;margin:0;border:0;border-radius:50%;background-color:var(--accent-color);-webkit-appearance:none;appearance:none;cursor:pointer}.progress input::-moz-range-thumb{width:10px;height:10px;margin:0;border:0;border-radius:50%;background-color:var(--accent-color);cursor:pointer;-moz-appearance:none;appearance:none;cursor:pointer}@media screen and (max-width:1280px){.text,.image{padding:0}img.portrait,img.landscape,.video-player{max-width:100%;min-width:unset!important}}</style>
     </head>
     <body>
-        <header>
-            <nav class="title">
-                <a href="#" onclick="resetToHome(); return false;" aria-label="Home sweet home">Max Sheridan</a>
-            </nav>
-            <nav class="links">
-                <button onclick="openModal('workModal')" aria-label="Open work">Work</button>
-                <button onclick="openModal('cvModal')" aria-label="Open cv">CV</button>
-                <button onclick="openModal('faqModal')" aria-label="Open faq">FAQ</button>
-                <button onclick="openModal('infoModal')" aria-label="Open info">Info</button>
+        <header class="margins-off linkstyling-off">
+            <div class="site-title">
+                <a href="/">Max Sheridan</a>
+            </div>
+            <nav>
+                <a href="/" class="active">Work</a>
+                <a href="info.html">Info</a>
             </nav>
         </header>
-            <main>
-                <div id="workModal" class="modal scroll"><style>#workModal .text {max-width:37rem}#centerfield a{border-bottom:var(--accent-color)}.image{padding:0 4rem 0 0}img.portrait{width:auto;max-width:100%;height:auto;max-height:550px}img.landscape{width:auto;max-width:100%;height:auto;max-height:500px}.controls{display:flex;align-items:center;margin-top:.5rem}.play-pause{display:flex;align-items:center;justify-content:center;width:22px;height:22px;margin-right:.5rem;padding:0;border:0;border-radius:50%;background-color:var(--accent-color);cursor:pointer}.play-pause .icon{width:75%;height:75%}.play-pause.play .icon polygon{fill:var(--background-color)}.play-pause.pause .icon rect{fill:var(--background-color)}.progress{position:relative;flex:1;height:2px;background-color:lightgray;cursor:pointer}.progress-filled{width:0%;height:100%;background-color:var(--accent-color)}.progress input{position:absolute;top:-.45rem;width:100%;height:16px;margin:0;border:0;background:#fff0;-webkit-appearance:none;-moz-appearance:none;appearance:none;cursor:auto;}.progress input::-webkit-slider-thumb{width:10px;height:10px;margin:0;border:0;border-radius:50%;background-color:var(--accent-color);-webkit-appearance:none;appearance:none;cursor:pointer}.progress input::-moz-range-thumb{width:10px;height:10px;margin:0;border:0;border-radius:50%;background-color:var(--accent-color);cursor:pointer;-moz-appearance:none;appearance:none;cursor:pointer}@media screen and (max-width:1024px){.text,.image{padding:0}img.portrait,img.landscape,.video-player{max-width:100%;min-width:unset!important;margin:0 0 2rem 0}}</style>
-                    <div class="modal-inner">
-                        <section class="section" id="misfit-union">
-                            <div class="section-inner">
-                                <div class="image">
-                                    <img class="portrait" src="assets/images/misfit_union.webp" alt="Yellow on green Misfit Union Doypack (pouch)" width="558" height="750" loading="eager" fetchpriority="high">
+        <main id="work">
+            <div class="acme-all-purpose-wrapper">
+                <div class="the-whole-enchilada">
+                    <section class="section" id="misfit-union">
+                        <div class="section-inner">
+                            <div class="image">
+                                <img class="portrait" src="assets/images/misfit_union.webp" alt="Yellow on green Misfit Union Doypack (pouch)" width="558" height="750" loading="eager" fetchpriority="high">
+                            </div>
+                            <div class="text">
+                                <div class="description">
+                                    <h1>
+                                        Misfit Union
+                                    </h1>
+                                    <h2>
+                                        Package Copy
+                                    </h2>
+                                    <p>
+                                        An edgy brand story for a maverick start-up on a mission to change the way people bought and consumed food. Package design by RTD.
+                                    </p>
+                                    <hr>
+                                </div>    
+                                <div class="quote">
+                                    <h3>
+                                        “Way to go, misfit. You’ve just saved the planet 9 truck trips and made a local farmer happy. And you’re eating good, clean, hand-prepared food that doesn’t come with any ingredients you can’t pronounce. So happy, healthy eating. Enjoy every ounce of this nutrition-packed meal before you recycle our eco-package. Try a new combi­nation every time. And, please, you keep doing you. Don’t fit in. Join the evolution.”
+                                    </h3>
                                 </div>
-                                <div class="text">
-                                    <div class="description">
-                                        <h1>
-                                            Misfit Union
-                                        </h1>
-                                        <h2>
-                                            Package Copy
-                                        </h2>
-                                        <p>
-                                            An edgy brand story for a maverick start-up on a mission to change the way people bought and consumed food. Package design by RTD.
-                                        </p>
-                                        <hr>
-                                    </div>    
-                                    <div class="quote">
-                                        <h3>
-                                            “Way to go, misfit. You’ve just saved the planet 9 truck trips and made a local farmer happy. And you’re eating good, clean, hand-prepared food that doesn’t come with any ingredients you can’t pronounce. So happy, healthy eating. Enjoy every ounce of this nutrition-packed meal before you recycle our eco-package. Try a new combi­nation every time. And, please, you keep doing you. Don’t fit in. Join the evolution.”
-                                        </h3>
+                            </div>
+                            <div class="scroll-cue">
+                                <p>
+                                    This way&#8201;<svg class="scroll-arrow" width="100%" height="100%" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg"><path d="M7.48 12.2h2.14l6.15-6.1L9.6 0H7.5l5.3 5.3H1.5v1.62h11.27z" fill="var(--accent-color)"/></svg>
+                                </p>
+                            </div>
+                        </div> 
+                    </section>
+                    <section class="section" id="tekton">
+                        <div class="section-inner">
+                            <div class="image">
+                                <div class="video-player margins-off">
+                                    <video src="assets/video/code_free_algotrading.mp4" poster="/assets/images/tekton.webp" title="Code Free Algotrading Words by Max Sheridan" type="video/mp4">
+                                    <track kind="captions" srclang="en" label="English" default>Your browser does not support the video tag. 
+                                    </video>
+                                    <div class="overlay">
+                                        <img src="assets/images/tekton.webp" alt="Tekton video poster" width="800" height="456" loading="lazy">
+                                    </div>
+                                    <div class="controls">
+                                    <button class="play-pause play" aria-label="Play video">
+                                        <svg class="icon" viewBox="0 0 30 30">
+                                            <polygon points="10,6.9 10,23.1 24,15" fill="currentColor"></polygon>
+                                        </svg>
+                                    </button>
+                                    <div class="progress">
+                                        <div class="progress-filled"></div>
+                                            <input
+                                                type="range"
+                                                value="0"
+                                                max="100"
+                                                step="0.1"
+                                                aria-label="Progress"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="scroll-cue">
+                            </div>
+                            <div class="text">
+                                <div class="description">
+                                    <h1>
+                                        Tekton
+                                    </h1>
+                                    <h2>
+                                        Video Script
+                                    </h2>
                                     <p>
-                                        This way&#8201;<svg class="scroll-arrow" width="100%" height="100%" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M7.48 12.2h2.14l6.15-6.1L9.6 0H7.5l5.3 5.3H1.5v1.62h11.27z" fill="var(--accent-color)"/></svg>
+                                        Making fiendishly difficult math simple and hip. The talented folks at Navajo Digital made this video from my script. Play it!
+                                    </p>
+                                </div>     
+                            </div>
+                        </div> 
+                    </section>
+                    <section class="section" id="reforest-nicosia">
+                        <div class="section-inner">
+                            <div class="image">
+                                <img class="landscape" src="assets/images/reforest_nicosia.webp" alt="Reforest Nicosia website" width="900" height="675" loading="lazy">
+                            </div>    
+                            <div class="text">
+                                <div class="description">
+                                    <h1>
+                                        Reforest Nicosia
+                                    </h1>
+                                    <h2>
+                                        Brand Voice
+                                    </h2>
+                                    <p>
+                                        One part Don’t Look Up, three parts hard hope, Reforest Nicosia’s new brand voice (and its awesome new website) is kickstarting the fight against climate change in one of Europe’s least green capitals.
+                                    </p>
+                                </div>    
+                                <hr>
+                                <div class="quote">
+                                    <h3>
+                                        “We’re Reforest Nicosia, a grassroots team of local organisers, environ&shy;mental experts, and community volunteers. We’ve planted over 10,000 trees in the wider Nicosia area so far. Our goal is to plant 300,000 — one tree for every resident of the city. (That’s you!) Join our effort to save the planet. Help us green Cyprus.”
+                                    </h3>
+                                </div>
+                            </div>
+                        </div> 
+                    </section>
+                    <section class="section" id="medovie">
+                        <div class="section-inner">
+                            <div class="image">
+                                <img class="portrait" src="assets/images/medovie.webp" alt="Medovie copywriting samples" width="1300" height="1082" loading="lazy">
+                            </div>
+                            <div class="text">
+                                <div class="description">
+                                    <h1>
+                                        Medovie
+                                    </h1>
+                                    <h2>
+                                        Copywriting
+                                    </h2>
+                                    <p>
+                                        The story of a natural skincare company told from start to finish over four weeks and 400 cups of coffee. Deliverables included: website and package copy, articles, user stories, socials, marketing emails, video scripts, and a ton of micro­copy.
                                     </p>
                                 </div>
-                            </div> 
-                        </section>
-                        <section class="section" id="tekton">
-                            <div class="section-inner">
-                                <div class="image">
-                                    <div class="video-player">
-                                        <video src="assets/video/code_free_algotrading.mp4" poster="/assets/images/tekton.webp" title="Code Free Algotrading Words by Max Sheridan" type="video/mp4">
-                                        <track kind="captions" srclang="en" label="English" default>Your browser does not support the video tag. 
-                                        </video>
-                                        <div class="overlay">
-                                            <img src="assets/images/tekton.webp" alt="Tekton video poster" width="800" height="456" loading="lazy">
-                                        </div>
-                                        <div class="controls">
-                                        <button class="play-pause play" aria-label="Play video">
-                                            <svg class="icon" viewBox="0 0 30 30">
-                                                <polygon points="10,6.9 10,23.1 24,15" fill="currentColor"></polygon>
-                                            </svg>
-                                        </button>
-                                        <div class="progress">
-                                            <div class="progress-filled"></div>
-                                                <input
-                                                    type="range"
-                                                    value="0"
-                                                    max="100"
-                                                    step="0.1"
-                                                    aria-label="Progress"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text">
-                                    <div class="description">
-                                        <h1>
-                                            Tekton
-                                        </h1>
-                                        <h2>
-                                            Video Script
-                                        </h2>
-                                        <p>
-                                            Making fiendishly difficult math simple and hip. The talented folks at Navajo Digital made this video from my script. Play it!
-                                        </p>
-                                    </div>     
-                                </div>
-                            </div> 
-                        </section>
-                        <section class="section" id="reforest-nicosia">
-                            <div class="section-inner">
-                                <div class="image">
-                                    <img class="landscape" src="assets/images/reforest_nicosia.webp" alt="Reforest Nicosia website" width="900" height="675" loading="lazy">
-                                </div>    
-                                <div class="text">
-                                    <div class="description">
-                                        <h1>
-                                            Reforest Nicosia
-                                        </h1>
-                                        <h2>
-                                            Brand Voice
-                                        </h2>
-                                        <p>
-                                            One part Don’t Look Up, three parts hard hope, Reforest Nicosia’s new brand voice (and its awesome new website) is kickstarting the fight against climate change in one of Europe’s least green capitals.
-                                        </p>
-                                    </div>    
-                                    <hr>
-                                    <div class="quote">
-                                        <h3>
-                                            “We’re Reforest Nicosia, a grassroots team of local organisers, environ&shy;mental experts, and community volunteers. We’ve planted over 10,000 trees in the wider Nicosia area so far. Our goal is to plant 300,000 — one tree for every resident of the city. (That’s you!) Join our effort to save the planet. Help us green Cyprus.”
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div> 
-                        </section>
-                        <section class="section" id="medovie">
-                            <div class="section-inner">
-                                <div class="image">
-                                    <img class="portrait" src="assets/images/medovie.webp" alt="Medovie copywriting samples" width="1300" height="1082" loading="lazy">
-                                </div>
-                                <div class="text">
-                                    <div class="description">
-                                        <h1>
-                                            Medovie
-                                        </h1>
-                                        <h2>
-                                            Copywriting
-                                        </h2>
-                                        <p>
-                                            The story of a natural skincare company told from start to finish over four weeks and 400 cups of coffee. Deliverables ran the gamut: website and package copy, articles, user stories, social media, marketing emails, video scripts, and a ton of micro­copy.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div> 
-                        </section>
-                        <section class="section" id="boc">
-                            <div class="section-inner">
-                                <div class="image">
-                                    <img class="landscape" src="assets/images/boc.webp"  alt="Screens from Bank of Cyprus mobile app" width="1300" height="798" loading="lazy">
-                                </div>
-                                <div class="text">
-                                    <div class="description">
-                                        <h1>
-                                            Bank of Cyprus
-                                        </h1>
-                                        <h2>
-                                            UX Writing
-                                        </h2>
-                                        <p>
-                                            A refresh of a popular banking app with oodles of micro­copy that needed a pin&shy;point user journey.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div> 
-                        </section>
-                        <section class="section" id="becca-europe">
-                            <div class="section-inner">
-                                <div class="image">
-                                    <img class="landscape" src="assets/images/becca_europe.webp" alt="BECCA Europe graphic featuring a cut-out of a female singer and text" width="800" height="810" loading="lazy">
-                                </div>
-                                <div class="text">
-                                    <div class="description">
-                                        <h1>
-                                            BECCA Europe
-                                        </h1>
-                                        <h2>
-                                            Creative Direction
-                                        </h2>
-                                        <p>
-                                            A full rebrand of a leading creative arts funding consultancy with a focus on stories, not stats. Deliverables included visual identity, website design and copy, and newsletters. 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div> 
-                        </section>
-                        <section class="section" id="wp-clone">
-                            <div class="section-inner">
-                                <div class="image">
-                                    <img class="landscape" src="assets/images/wp_clone.webp" alt="Content from the WP Clone website" width="1300" height="920" loading="lazy">
-                                </div>
-                                <div class="text">
-                                    <div class="description">
-                                        <h1>
-                                            WP Clone
-                                        </h1>
-                                        <h2>
-                                            Website Writing
-                                        </h2>
-                                        <p>
-                                            Helping an SaaS start-up with a highly technical audience get their selling points across without sounding like an IT manual.
-                                        </p>
-                                    </div>
-                                    <hr>
-                                    <div class="quote">
-                                        <h3>“Sock-rocking WordPress management bundles that will make your wallet happy.”</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="section" id="centerfield">
-                            <div class="section-inner">
-                                <div class="image">
-                                    <img class="landscape" src="assets/images/longform.webp" alt="Photo illustration of influencers sitting on a huge mobile phone accumulating likes" width="800" height="600" loading="lazy"> 
-                                </div>                 
-                                <div class="text">
-                                    <div class="description">
-                                        <h1>
-                                            Centerfield Media
-                                        </h1>
-                                        <h2>
-                                            Content Writing
-                                        </h2>
-                                        <div style="margin-bottom: 1.5rem;">
-                                            <p>
-                                                I’ve written a lot of stories over the years, under my own name and as a ghost&shy;writer. Here are a few links to my latest work at Centerfield Media. Read more of my work at&#32;<a href="https://medium.com/copy-cat" target="_blank">Copy Cat</a>. (The little 👻 means I wrote it but you won’t see my name on it.)
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <ul>
-                                                <li>
-                                                    <a href="https://www.safehome.org/home-security-cameras/turn-old-phone-into-security-camera/" target="_blank">How to Turn Your Old Phone Into a Home Security Camera&#32;<svg class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="var(--primary-color)"/></svg>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://longform.maxsheridan.com/tech/porch-pirates" target="_blank">Is Your Home a Magnet for Porch Pirates?&#32;<svg class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="var(--primary-color)"/></svg>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://longform.maxsheridan.com/tech/parental-controls" target="_blank">Her 6-Year-Old Spent $16,000 in the App Store&#32;<svg class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="var(--primary-color)"/></svg>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://longform.maxsheridan.com/tech/holiday-scams" target="_blank">Twas the Night Before Christmas and the Cybercriminals Were Stirring&#32;<svg class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="var(--primary-color)"/></svg>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://www.safehome.org/news/celebrity-home-security-systems/" target="_blank">These Celebrity Home Security Systems Will Blow Your Mind 👻&#32;<svg class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="var(--primary-color)"/></svg>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="section" id="contact">
-                                <div class="section-inner description">
-                                    <div class="description" style="text-align: center;">
-                                        <span>
-                                            <h1>
-                                                Contact
-                                            </h1>
-                                        </span>
-                                        <p style="text-decoration: none;">
-                                            max@maxsheridan.com
-                                        </p>
-                                        <p style="text-decoration: none;">
-                                            +357 96440814
-                                        </p>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </div>   
-            <div id="cvModal" class="modal scroll" style="display:none;"><style>#cvModal.section-inner{display:flex;justify-content:center;align-items:center;padding:0 3.5rem}.row{display:flex;padding:0 3rem}#cvModal .description{flex:.5;max-width:39rem}@media only screen and (min-width:1025px){.row .description:first-child{padding:0 3.5rem 0 0}.row .description:last-child{padding:0 0 0 3.5rem}.hr-mobile{display:none}}span{font-family:var(--heading-font);font-size:clamp(1rem,4vw,1.1rem);font-weight:500;line-height:1.5;color:var(--primary-color)}#skills,#about-me{#two,#four{margin-top:2rem}}@media screen and (max-width:1024px){.row{flex-direction:column;padding:0}.hr-desktop{display:none}#skills,#about-me{#two,#three,#four{margin-top:2.25rem}}}</style>
-                <div class="modal-inner">
-                    <section class="section">
-                        <div class="section-inner">
-                            <div class="content">
-                                <div class="row title">
-                                    <div class="title">
-                                        <h1>Work</h1>
-                                    </div>
-                                </div>    
-                                <div class="row">
-                                    <div class="description">
-                                        <div>
-                                            <span>
-                                                2020-Present
-                                            </span>
-                                            <h2>
-                                                Writer&#32;<svg class="arrow-rgt" width="100%" height="100%" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M7.48 12.2h2.14l6.15-6.1L9.6 0H7.5l5.3 5.3H1.5v1.62h11.27z" fill="var(--accent-color)"/></svg>&#32;Centerfield Media
-                                            </h2>
-                                            <p>
-                                                I’ve worked across Centerfield’s verticals writing news pieces, buyer’s guides, and product reviews on home security, consumer tech, and digital privacy. My writing is heavily SEO-focused, but I’ve also had the creative leeway to pitch, research, and develop a number of deep dives and buzzier pieces on my own.
-                                            </p>
-                                        </div>
-                                        <hr>
-                                        <div>
-                                            <span>
-                                                2016-2022
-                                            </span>
-                                            <h2>
-                                                Creative Director&#32;<svg class="arrow-rgt" width="100%" height="100%" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M7.48 12.2h2.14l6.15-6.1L9.6 0H7.5l5.3 5.3H1.5v1.62h11.27z" fill="var(--accent-color)"/></svg>&#32;Storyline Creatives
-                                            </h2>
-                                        </div>
-                                        <div>
-                                            <p>
-                                                At Storyline, my job was to discover ideas and voices that resonated with audiences and turn them into stories that defined the brands I wrote about. I helped small-to-medium-sized businesses — and bigger names like Bank of Cyprus, JCC Payment Systems,  Cobalt Aero, and Ancoria Insurance — tell their stories across their marketing channel
-                                            </p>
-                                        </div>
-                                        <hr class="hr-mobile">
-                                    </div>
-                                    <div class="description">
-                                        <div>
-                                            <span>
-                                                2015-2020
-                                            </span>
-                                            <h2>
-                                                Director&#32;<svg class="arrow-rgt" width="100%" height="100%" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M7.48 12.2h2.14l6.15-6.1L9.6 0H7.5l5.3 5.3H1.5v1.62h11.27z" fill="var(--accent-color)"/></svg>&#32;Write CY
-                                            </h2>
-                                            <p>
-                                                Write CY was a Nicosia-based creative writing space where aspiring and established writers and story­tellers gathered to develop their craft and share it with the community. Apart from founding and directing the center, I also taught short story writing, live storytelling, and creative blogging, and managed its digital presence.
-                                            </p>
-                                        </div>
-                                        <hr>
-                                        <div>
-                                            <span>
-                                                2005-Present
-                                            </span>
-                                            <h2>
-                                                Creative Writer
-                                            </h2>
-                                            <p>When I’m not writing copy, I write fiction and journalism. I’ve published over 40 short stories and articles, and two novels —&#32;<span style="font-family: var(--heading-font);">Dillo</span>&#32;(Down and Out Books, 2018) and&#32;<span style="font-family: var(--heading-font);">God’s Speedboat</span>&#32;(Outcast Press, 2023).</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="scroll-cue">
-                            <p>
-                                This way&#8201;<svg class="scroll-arrow" width="100%" height="100%" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M7.48 12.2h2.14l6.15-6.1L9.6 0H7.5l5.3 5.3H1.5v1.62h11.27z" fill="var(--accent-color)"/></svg>
-                            </p>
-                        </div> 
-                    </section>
-                    <section id="skills" class="section">
-                        <div class="section-inner">
-                            <div class="content">
-                                <div class="row title">
-                                    <div class="title">
-                                        <h1>Skills</h1>
-                                    </div>
-                                </div>    
-                                <div class="row">
-                                    <div class="description">
-                                        <div id="one">
-                                            <h2>
-                                                Content and UX Writing
-                                            </h2>
-                                            <p>
-                                                I’m really good at hooking readers with snappy, absorbing content at any length, in any style. I have a soft spot for writing articles and websites, but I’m just as at home with marketing emails, video scripts, product copy, Google ads, and more. (That “more” includes SEO titles and descriptions.)
-                                            </p>
-                                        </div>
-                                        <div id="two">
-                                            <h2>
-                                                Creative Direction
-                                            </h2>
-                                            <p>
-                                                I love coming up with memorable ideas that can spark marketing and content cam­paigns, and even brand identities. And I love working with passionate teams to make those ideas happen.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="description">
-                                        <div id="three">
-                                            <h2>
-                                                Storytelling
-                                            </h2>
-                                            <p>
-                                                My background is in fiction and journalism, so telling company stories is second nature. I also teach creative writing and have written extensively about story&shy;telling for the web, which comes in very handy when I need to communicate my creative choices to the teams I work with.
-                                            </p>
-                                        </div>
-                                        <div id="four">
-                                            <h2>
-                                                Visual Thinking
-                                            </h2>
-                                            <p>
-                                                I’m fluent in Adobe Illustrator and Photoshop (and now Affinity Designer and Photo), which I use to create professional photo illustrations and collages for my work. I’m also a website designer, and occasionally have the chance to design the websites I write. All of which is to say that I never write a word without imagining how it will look on the page.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div> 
                     </section>
-                    <section id="about-me" class="section">
+                    <section class="section" id="boc">
                         <div class="section-inner">
-                            <div class="content">
-                                <div class="row title">
-                                    <div class="title">
-                                        <h1>About me</h1>
-                                    </div>
-                                </div>    
-                                <div class="row">
-                                    <div class="description">
-                                        <div id="one">
-                                            <h2>
-                                                Languages
-                                            </h2>
-                                            <p>
-                                                English ■■■■■■■■■■ Native
-                                            </p>
-                                            <p>
-                                                Greek ■■■■■■■□□□ 70%
-                                            </p>
-                                        </div>
-                                        <div id="two">
-                                            <h2>
-                                                Education
-                                            </h2>
-                                            <p>
-                                                MA in Classics, University of Illinois at Urbana-Champaign, U.S.
-                                            </p>
-                                            <p>
-                                                BA in Classics, University of Virginia at Charlottesville, U.S.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="description">
-                                        <div id="three">
-                                            <h2>
-                                                Availability
-                                            </h2>
-                                            <p>
-                                                I’m based in Europe (GMT+2), but I write for people and businesses around the world. I’m available for projects, contract work, or long-term collaborations.
-                                            </p>
-                                        </div>
-                                        <div id="four">
-                                            <h2>
-                                                After Hours
-                                            </h2>
-                                            <p>
-                                                I have an unhealthy obssession with typography that I blame on director Gary Hustwit, whose awesome documentary&#32;<span style="font-family:var(--heading-font)">Helvetica</span>&#32;really got me thinking about type. I play the guitar, make a mean sweet potato and black bean chili, and love (love!) bad Nic Cage movies.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="image">
+                                <img class="landscape" src="assets/images/boc.webp"  alt="Screens from Bank of Cyprus mobile app" width="1300" height="798" loading="lazy">
                             </div>
-                        </div> 
-                    </section>
-                    <section id="contact" class="section">
-                        <div class="section-inner description">
-                            <div class="description" style="text-align: center;">
-                                <span>
+                            <div class="text">
+                                <div class="description">
                                     <h1>
-                                        Contact
+                                        Bank of Cyprus
                                     </h1>
-                                </span>
-                                <p style="text-decoration: none;">
-                                    max@maxsheridan.com
-                                </p>
-                                <p style="text-decoration: none;">
-                                    +357 96440814
-                                </p>
+                                    <h2>
+                                        UX Writing
+                                    </h2>
+                                    <p>
+                                        A refresh of a popular banking app with oodles of micro­copy that needed a pin&shy;point user journey.
+                                    </p>
+                                </div>
+                            </div>
+                        </div> 
+                    </section>
+                    <section class="section" id="becca-europe">
+                        <div class="section-inner">
+                            <div class="image">
+                                <img class="landscape" src="assets/images/becca_europe.webp" alt="BECCA Europe graphic featuring a cut-out of a female singer and text" width="800" height="810" loading="lazy">
+                            </div>
+                            <div class="text">
+                                <div class="description">
+                                    <h1>
+                                        BECCA Europe
+                                    </h1>
+                                    <h2>
+                                        Creative Direction
+                                    </h2>
+                                    <p>
+                                        A full rebrand of a leading creative arts funding consultancy with a focus on stories, not stats. Deliverables included: visual identity, website design and copy, and newsletters. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div> 
+                    </section>
+                    <section class="section" id="wp-clone">
+                        <div class="section-inner">
+                            <div class="image">
+                                <img class="landscape" src="assets/images/wp_clone.webp" alt="Content from the WP Clone website" width="1300" height="920" loading="lazy">
+                            </div>
+                            <div class="text">
+                                <div class="description">
+                                    <h1>
+                                        WP Clone
+                                    </h1>
+                                    <h2>
+                                        Website Writing
+                                    </h2>
+                                    <p>
+                                        Helping an SaaS start-up with a highly technical audience get their selling points across without sounding like an IT manual.
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="quote">
+                                    <h3>“Sock-rocking WordPress management bundles that will make your wallet happy.”</h3>
+                                </div>
                             </div>
                         </div>
                     </section>
-                </div>
-            </div>
-            <div id="faqModal" class="modal scroll" style="display:none;"><style>#faqModal .section{width:45%}#faqModal .text{max-width:35rem;height:130px;margin:0 auto}@media screen and (max-width:1024px){#faqModal .section{border-bottom:1px solid var(--accent-color)}#faqModal .text{height:unset}}</style>
-                <div class="modal-inner">
-                    <section class="section">
+                    <section class="section" id="centerfield">
                         <div class="section-inner">
+                            <div class="image">
+                                <img class="landscape" src="assets/images/longform.webp" alt="Photo illustration of influencers sitting on a huge mobile phone accumulating likes" width="800" height="600" loading="lazy"> 
+                            </div>                 
                             <div class="text">
-                                <h1>
-                                    Why should I work with you?
-                                </h1>
-                                <p>
-                                    Remember the last thing you read on the web that just blew you away? I can give you a voice like that. I’m also good with layout and design, so your content will look great, too.
-                                </p>
+                                <div class="description">
+                                    <h1>
+                                        Centerfield Media
+                                    </h1>
+                                    <h2>
+                                        Content Writing
+                                    </h2>
+                                    <p>
+                                        I’ve written a lot of stories over the years, under my own name and as a ghost&shy;writer. Here are a few links to my latest work at Centerfield Media. Read more of my work at <a href="https://medium.com/copy-cat" target="_blank"> Copy Cat</a>. (The little 👻 means I wrote it but you won’t see my name on it.)
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.safehome.org/home-security-cameras/turn-old-phone-into-security-camera/" target="_blank">How to Turn Your Old Phone Into a Home Security Camera&#32;<svg class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="var(--primary-color)"/></svg>
+                                        </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://longform.maxsheridan.com/tech/porch-pirates" target="_blank">Is Your Home a Magnet for Porch Pirates?&#32;<svg class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="var(--primary-color)"/></svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://longform.maxsheridan.com/tech/parental-controls" target="_blank">Her 6-Year-Old Spent $16,000 in the App Store&#32;<svg class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="var(--primary-color)"/></svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://longform.maxsheridan.com/tech/holiday-scams" target="_blank">Twas the Night Before Christmas and the Cybercriminals Were Stirring&#32;<svg class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="var(--primary-color)"/></svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.safehome.org/news/celebrity-home-security-systems/" target="_blank">These Celebrity Home Security Systems Will Blow Your Mind 👻&#32;<svg class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="var(--primary-color)"/></svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div> 
-                    </section>
-                    <section class="section">
-                        <div class="section-inner">
-                            <div class="text">
-                                <h1>
-                                    How much do you charge?
-                                </h1>
-                                <p>
-                                    As much as this sounds like a cliché, every project is unique, so we can’t talk numbers untill I’ve done a little scoping. But I can, and will, give you an upfront quote before we begin.
-                                </p>
-                            </div>
-                        </div> 
-                    </section>
-                    <section class="section">
-                        <div class="section-inner">
-                            <div class="text">
-                                <h1>
-                                    Is there anything you don’t write?
-                                </h1>
-                                <p>
-                                    I’ve never written a ransom note, a horo&shy;scope, or a Dear John letter. Every­thing else is fair game.&#32;😬
-                                </p>
-                            </div>
-                        </div> 
-                    </section>
-                    <section class="section">
-                        <div class="section-inner">
-                            <div class="text">
-                                <h1>
-                                    What’s your revision policy?
-                                </h1>
-                                <p>
-                                    You get two rounds of revisions on any content I deliver. That’s usually all it takes to get it right. If your project is different, we can work some&shy;thing out.
-                                </p>
-                            </div>
-                        </div> 
-                    </section>
-                    <section class="section">
-                        <div class="section-inner">
-                            <div class="text">
-                                <h1>
-                                    Are you good with SEO?
-                                </h1>
-                                <p>
-                                    Yes! I’m really good with on-page search engine optimization, meta descrip&shy;tions and titles included. So you can stop flush­ing your money away on Google ads.&#32;🎉
-                                </p>
-                            </div>
-                        </div> 
-                    </section>
-                    <section class="section">
-                        <div class="section-inner">
-                            <div class="text">
-                                <h1>
-                                    Will you work with my designer?
-                                </h1>
-                                <p>
-                                    Absolutely. Great writing can’t shine without great design, so working with your team is a lot better for both of us than just dumping a bunch of copy in their laps.
-                                </p>
-                            </div>
-                        </div> 
+                        </div>
                     </section>
                     <section class="section" id="contact">
                         <div class="section-inner description">
                             <div class="description" style="text-align: center;">
-                                <span>
-                                    <h1>
-                                        Contact
-                                    </h1>
-                                </span>
+                                <h1 class="red">
+                                    Contact
+                                </h1>
                                 <p style="text-decoration: none;">
                                     max@maxsheridan.com
                                 </p>
-                                <p style="text-decoration: none;">
-                                    +357 96440814
-                                </p>
                             </div>
                         </div>
-                    </section>
-                </div>
-            </div>
-            <div id="infoModal" class="modal" style="display:none;"><style>#infoModal .modal-inner{display:flex;justify-content:center;align-items:center;min-height:100dvh;padding:20rem 1rem}.text{max-width:36rem}@media only screen and (max-width:768px){#infoModal .modal-inner{display:block;padding:8.5rem 1rem}}@media only screen and (max-width:768px) and (orientation:landscape){#infoModal .modal-inner {padding: 10rem 1rem}}</style>
-                <div class="modal-inner">
-                    <div class="text">
-                        <h1>
-                            About
-                        </h1>
-                        <p>
-                            I’m a copy&hairsp;/&hairsp;content writer with a background in creative writing and long&shy;form journalism, so turning messages into compelling stories is what I do best. I’m the co-founder of Storyline Creatives, a boutique writing agency that specialized in story-driven content, and a freelance writer with over 15 years’ experience developing copy and editorial content for print and web media across the globe. I work with people and businesses that want to sound as good as they look.   
-                        </p>
-                        <hr>
-                        <p style="text-decoration: none;">
-                            <span style="font-family:var(--heading-font);">Contact:</span>&#32;max@maxsheridan.com
-                        </p>
-                        <hr>
-                        <p>
-                            <span style="font-family: var(--heading-font);">Site info:</span>&#32;This site is proudly hand coded 💪 and hosted on GitHub. Type is Diatype by Dinamo.
-                        </p>
-                    </div>
+                    </section>  
                 </div>
             </div>
         </main>
-        <footer>
-            <div id="acme-all-purpose-theme-toggle-wrapper">
-                <label id="theme-o-matic">
-                    <svg class="toggle-thingy moon" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 256 256">
-                        <path fill="none" d="M0 0h256v256H0z"/>
-                        <path d="M108.11 28.11a96.09 96.09 0 0 0 119.78 119.78A96 96 0 1 1 108.11 28.11" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"/>
-                    </svg>
-                    <svg class="toggle-thingy sun" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 256 256">
-                        <path fill="none" d="M0 0h256v256H0z"/>
-                        <path fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="20" d="M128 40V16"/>
-                        <circle cx="128" cy="128" r="56" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"/>
-                        <path fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="20" d="M64 64 48 48m16 144-16 16M192 64l16-16m-16 144 16 16M40 128H16m112 88v24m88-112h24"/>
-                    </svg>
-                </label>
+        <footer class="margins-off linkstyling-off">
+            <div>
+                <a href="mailto:max@maxsheridan.com" id="mail">
+                    Mail&#32;<svg class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="currentColor"/></svg>
+                </a>
+                <span id="copyMessage" class="fade-in" style="margin:.5rem;color:var(--accent-color)">
+                    Copied!
+                </span>
             </div>
-            <div class="copyright">
-                <p>©25MS
-                </p>
-            </div>
+            <a href="/assets/pdfs/max_sheridan_CV.pdf">
+                CV&#32;<svg class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="currentColor"/></svg>
+            </a>
         </footer>
         <script type="application/ld+json">
             {
@@ -630,9 +305,8 @@
                 "url": "https://creative.maxsheridan.com"
             }
         </script>
-        <script>const setColorMode=(mode)=>{document.documentElement.setAttribute('data-force-color-mode',mode)};const applyDarkModeOnLoad=()=>{setColorMode('light')};window.addEventListener('DOMContentLoaded',applyDarkModeOnLoad);window.addEventListener('pageshow',()=>{setTimeout(()=>{applyDarkModeOnLoad()},0)});document.querySelector('#theme-o-matic').addEventListener('click',()=>{const currentMode=document.documentElement.getAttribute('data-force-color-mode')||'light';const newMode=currentMode==='light'?'dark':'light';setColorMode(newMode)});</script>
-        <script>document.addEventListener("DOMContentLoaded",function(){function resetVideoPlayers(){document.querySelectorAll(".video-player").forEach((videoPlayer)=>{const video=videoPlayer.querySelector("video");const overlay=videoPlayer.querySelector(".overlay");video.pause();video.currentTime=0;overlay.style.opacity=1})}function updateActiveState(modalId){document.querySelectorAll("button, a").forEach(el=>el.classList.remove("active"));document.querySelectorAll(`button[onclick="openModal('${modalId}')"], a[onclick="openModal('${modalId}')"]`).forEach(el=>el.classList.add("active"))}window.openModal=function(modalId){const modalContent=document.getElementById(modalId);if(modalContent&&getComputedStyle(modalContent).display==='block'){return}document.querySelectorAll('.modal').forEach(modal=>modal.style.display='none');if(modalContent){modalContent.style.display='block'}resetVideoPlayers();updateActiveState(modalId);if(window.location.hash!==`#${modalId.replace("Modal", "")}`){window.location.hash=modalId.replace("Modal","")}if(modalContent&&modalContent.classList.contains('modal')&&modalContent.classList.contains('scroll')){modalContent.scrollTop=0;modalContent.scrollLeft=0}};window.addEventListener('hashchange',function(){const hash=window.location.hash.replace('#','');if(hash&&document.getElementById(`${hash}Modal`)){openModal(`${hash}Modal`)}else{resetToHome()}});window.resetToHome=function(){const workModal=document.getElementById('workModal');if(workModal&&getComputedStyle(workModal).display==='block'){return}document.querySelectorAll('.modal').forEach(modal=>modal.style.display='none');if(workModal){workModal.style.display='block'}document.querySelectorAll("button, a").forEach(el=>el.classList.remove("active"));const workButton=document.querySelector('button[onclick="openModal(\'workModal\')"]');if(workButton){workButton.classList.add('active')}document.querySelectorAll('.modal.scroll').forEach(modal=>{modal.scrollTop=0;modal.scrollLeft=0});history.replaceState(null,null,window.location.pathname)};const hash=window.location.hash.replace('#','');if(hash&&document.getElementById(`${hash}Modal`)){openModal(`${hash}Modal`)}else{resetToHome()}});document.addEventListener("DOMContentLoaded",function(){const workButton=document.querySelector('button[onclick="openModal(\'workModal\')"]');if(workButton){workButton.classList.add('active')}resetToHome()})</script>
-        <script>const modals=document.querySelectorAll(".modal");modals.forEach((scrollContainer)=>{scrollContainer.addEventListener("wheel",(evt)=>{evt.preventDefault();const deltaY=evt.deltaY;if(window.innerWidth>1024){scrollContainer.scrollLeft+=deltaY}else{scrollContainer.scrollTop+=deltaY}})})</script>
-        <script>document.addEventListener("DOMContentLoaded",()=>{const updatePlayPauseButton=(playPause,isPlaying)=>{playPause.className=isPlaying?"play-pause pause":"play-pause play";playPause.innerHTML=isPlaying?`<svg class="icon" viewBox="0 0 30 30"><rect x="10" y="8" width="3" height="14"></rect><rect x="17" y="8" width="3" height="14"></rect></svg>`:`<svg class="icon" viewBox="0 0 30 30"><polygon points="10,6.9 10,23.1 24,15"></polygon></svg>`};const toggleOverlay=(overlay,isVisible)=>{overlay.style.opacity=isVisible?1:0};const resetVideoPlayers=()=>{document.querySelectorAll(".video-player").forEach((e)=>{const video=e.querySelector("video");const playPause=e.querySelector(".play-pause");const progress=e.querySelector(".progress input");const progressFill=e.querySelector(".progress-filled");const overlay=e.querySelector(".overlay");video.pause();video.currentTime=0;updatePlayPauseButton(playPause,!1);progressFill.style.width="0%";progress.value=0;toggleOverlay(overlay,!0)})};document.querySelectorAll(".video-player").forEach(videoPlayer=>{const video=videoPlayer.querySelector("video");const playPause=videoPlayer.querySelector(".play-pause");const progress=videoPlayer.querySelector(".progress input");const progressFill=videoPlayer.querySelector(".progress-filled");const overlay=videoPlayer.querySelector(".overlay");playPause.addEventListener("click",()=>{if(video.paused){document.querySelectorAll("video").forEach(v=>v!==video&&v.pause());video.play();toggleOverlay(overlay,!1)}else{video.pause();toggleOverlay(overlay,!1)}});video.addEventListener("play",()=>{updatePlayPauseButton(playPause,!0);toggleOverlay(overlay,!1)});video.addEventListener("pause",()=>{updatePlayPauseButton(playPause,!1);toggleOverlay(overlay,!1)});video.addEventListener("timeupdate",()=>{const percentage=(video.currentTime/video.duration)*100||0;progressFill.style.width=`${percentage}%`;progress.value=percentage});progress.addEventListener("input",()=>{video.currentTime=(progress.value/100)*video.duration})});window.addEventListener("pageshow",resetVideoPlayers)})</script>
+        <script>const page=document.querySelector(".acme-all-purpose-wrapper");if(page){page.addEventListener("wheel",(evt)=>{evt.preventDefault();const deltaY=evt.deltaY;if(window.innerWidth>1280){page.scrollLeft+=deltaY}else{page.scrollTop+=deltaY}})}</script>
+        <script>document.addEventListener("DOMContentLoaded",()=>{const video=document.querySelector(".video-player video");const playPause=document.querySelector(".play-pause");const progress=document.querySelector(".progress input");const progressFill=document.querySelector(".progress-filled");const overlay=document.querySelector(".overlay");const updatePlayPauseButton=(isPlaying)=>{playPause.className=isPlaying?"play-pause pause":"play-pause play";playPause.innerHTML=isPlaying?`<svg class="icon" viewBox="0 0 30 30"><rect x="10" y="8" width="3" height="14"></rect><rect x="17" y="8" width="3" height="14"></rect></svg>`:`<svg class="icon" viewBox="0 0 30 30"><polygon points="10,6.9 10,23.1 24,15"></polygon></svg>`};const toggleOverlay=(isVisible)=>{overlay.style.opacity=isVisible?1:0};const resetVideoPlayer=()=>{video.pause();video.currentTime=0;updatePlayPauseButton(!1);progressFill.style.width="0%";progress.value=0;toggleOverlay(!0)};playPause.addEventListener("click",()=>{if(video.paused){video.play();toggleOverlay(!1)}else{video.pause()}});video.addEventListener("play",()=>{updatePlayPauseButton(!0);toggleOverlay(!1)});video.addEventListener("pause",()=>{updatePlayPauseButton(!1);toggleOverlay(!1)});video.addEventListener("timeupdate",()=>{const percentage=(video.currentTime/video.duration)*100||0;progressFill.style.width=`${percentage}%`;progress.value=percentage});progress.addEventListener("input",()=>{video.currentTime=(progress.value/100)*video.duration});window.addEventListener("pageshow",resetVideoPlayer)});</script>
+        <script>document.getElementById("mail").addEventListener("click",function(event){event.preventDefault();const email=this.href.replace(/^mailto:/,"");navigator.clipboard.writeText(email).then(()=>{const message=document.getElementById("copyMessage");message.classList.add("show");setTimeout(()=>{message.classList.remove("show")},2000)})});</script>   
     </body>
 </html>
