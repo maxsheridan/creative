@@ -32,11 +32,18 @@
     <body class="margins-off">
         <header class="margins-off linkstyling-off hover-color">
             <div class="site-title">
-                <a href="/">Max Sheridan</a>
+                <a href="/" aria-label="Max Sheridan home">Max Sheridan</a>
             </div>
-            <nav class="margins-off">
-                <a href="/">Work</a>
-                <a href="info" class="active">Info</a>
+            <h2 id="nav-label" class="vh">Main Menu</h2>
+            <nav aria-labelledby="nav-label">
+                <ul class="margins-off">
+                    <li>
+                        <a href="/" class="active">Work</a>
+                    </li>
+                    <l1>
+                        <a href="info.html">Info</a>
+                    </l1>
+                </ul>
             </nav>
         </header>
         <main id="info">
@@ -47,7 +54,7 @@
                 <p>
                     I’m a copy&hairsp;/&hairsp;content writer with a background in creative writing and long&shy;form journalism, so turning messages into compelling stories is what I do best. I’m the co-founder of Storyline Creatives, a boutique writing agency that specialized in story-driven content, and a freelance writer with over 15 years’ experience developing copy and editorial content for print and web media across the globe. I work with people and businesses that want to sound as good as they look.   
                 </p>
-                <hr>
+                <hr aria-hidden="true">
                 <p>
                     <strong>Contact:</strong> max@maxsheridan.com
                 </p>
@@ -57,17 +64,17 @@
                 </p>
             </div>
         </main>
-        <footer class="margins-off linkstyling-off hover-color">
+        <footer role="contentinfo" aria-label="Footer" class="margins-off linkstyling-off hover-color">
             <div>
                 <a href="mailto:max@maxsheridan.com" id="mail">
-                    Mail&#32;<svg class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="currentColor"/></svg>
+                    Mail&#32;<svg aria-hidden="true" class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="currentColor"/></svg>
                 </a>
                 <span id="copyMessage" class="fade-in" style="margin:.5rem;color:var(--accent-color)">
                     Copied!
                 </span>
             </div>
             <a href="/assets/pdfs/max_sheridan_CV.pdf">
-                CV&#32;<svg class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="currentColor"/></svg>
+                CV&#32;<svg aria-hidden="true" class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="currentColor"/></svg>
             </a>
         </footer>
         <script type="application/ld+json">

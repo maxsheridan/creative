@@ -15,7 +15,7 @@
         <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png" type="image/png">
         <link rel="manifest" href="/manifest.json" type="application/json">
         <link rel="canonical" href="https://creative.maxsheridan.com">
-        <title>Max Sheridan</title>
+        <title>Max Sheridan's Copywriting Portfolio</title>
         <meta name="description" content="Story-driven copywriting for web and print.">
         <meta name="thumbnail" content="https://creative.maxsheridan.com/assets/graphics/share.webp">
         <meta property="og:site_name" content="creative.maxsheridan.com">
@@ -31,11 +31,18 @@
     <body class="margins-off">
         <header class="margins-off linkstyling-off hover-color">
             <div class="site-title">
-                <a href="/">Max Sheridan</a>
+                <a href="/" aria-label="Max Sheridan home">Max Sheridan</a>
             </div>
-            <nav class="margins-off">
-                <a href="/" class="active">Work</a>
-                <a href="info.html">Info</a>
+            <h2 id="nav-label" class="vh">Main Menu</h2>
+            <nav aria-labelledby="nav-label">
+                <ul class="margins-off">
+                    <li>
+                        <a href="/" class="active">Work</a>
+                    </li>
+                    <l1>
+                        <a href="info.html">Info</a>
+                    </l1>
+                </ul>
             </nav>
         </header>
         <main id="work">
@@ -55,7 +62,8 @@
                             <p>
                                 An edgy brand story for a maverick start-up on a mission to change the way people bought and consumed food. Package design by RTD.
                             </p>
-                            <hr class="big-quote">
+                            <hr aria-hidden="true" class="big-quote">
+                            <span class="vh">Quote:</span>
                             <h3>
                                 “Way to go, misfit. You’ve just saved the planet 9 truck trips and made a local farmer happy. And you’re eating good, clean, hand-prepared food that doesn’t come with any ingredients you can’t pronounce. So happy, healthy eating. Enjoy every ounce of this nutrition-packed meal before you recycle our eco-package. Try a new combina&shy;tion every time. And, please, you keep doing you. Don’t fit in. Join the evolution.”
                             </h3>
@@ -122,7 +130,7 @@
                             <p>
                                 One part Don’t Look Up, three parts hard hope, Reforest Nicosia’s new brand voice (and its awesome new website) is kickstarting the fight against climate change in one of Europe’s least green capitals.
                             </p>
-                            <hr class="big-quote">
+                            <hr aria-hidden="true" class="big-quote">
                             <h3>
                                 “We’re Reforest Nicosia, a grassroots team of local organisers, environ&shy;mental experts, and community volunteers. We’ve planted over 10,000 trees in the wider Nicosia area so far. Our goal is to plant 300,000 — one tree for every resident of the city. (That’s you!) Join our effort to save the planet. Help us green Cyprus.”
                             </h3>
@@ -198,7 +206,7 @@
                             <p>
                                 Helping an SaaS start-up with a highly technical audience get their selling points across without sounding like an IT manual.
                             </p>
-                            <hr class="big-quote">
+                            <hr aria-hidden="true" class="big-quote">
                             <h3>
                                 “Sock-rocking WordPress manage&shy;ment bundles that will make your wallet happy.”
                             </h3>
@@ -257,17 +265,17 @@
                 </section>  
             </div>
         </main>
-        <footer class="margins-off linkstyling-off hover-color">
+        <footer role="contentinfo" aria-label="Footer" class="margins-off linkstyling-off hover-color">
             <div>
                 <a href="mailto:max@maxsheridan.com" id="mail">
-                    Mail&#32;<svg class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="currentColor"/></svg>
+                    Mail&#32;<svg aria-hidden="true" class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="currentColor"/></svg>
                 </a>
                 <span id="copyMessage" class="fade-in" style="margin:.5rem;color:var(--accent-color)">
                     Copied!
                 </span>
             </div>
             <a href="/assets/pdfs/max_sheridan_CV.pdf">
-                CV&#32;<svg class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="currentColor"/></svg>
+                CV&#32;<svg aria-hidden="true" class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="currentColor"/></svg>
             </a>
         </footer>
         <script type="application/ld+json">
