@@ -9,7 +9,7 @@
         <link rel="preload" href="/assets/images/misfit_union.webp" as="image">
         <link rel="preload" href="/assets/type/ABC_Diatype_Medium.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="/assets/type/ABC_Diatype.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="stylesheet" href="/style.css?v=2" as="text/css">
+        <link rel="stylesheet" href="/style.css?v=3" as="text/css">
         <link rel="icon" sizes="32x32" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" sizes="any" href="/favicon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png" type="image/png">
@@ -58,23 +58,19 @@
                 <p>
                     <strong>Contact:</strong> max@maxsheridan.com
                 </p>
-                <hr>
+                <hr aria-hidden="true">
                 <p>
                     <strong>Site info:</strong> This site is proudly hand coded 💪 and hosted on GitHub. Type is Diatype by Dinamo.
                 </p>
             </div>
         </main>
         <footer role="contentinfo" aria-label="Footer" class="margins-off linkstyling-off hover-color">
-            <div>
-                <a href="mailto:max@maxsheridan.com" id="mail">
-                    Mail&#32;<svg aria-hidden="true" class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="currentColor"/></svg>
+            <div class="margins-off">
+                <a href="#" onclick="copyEmail()">Email&#32;<svg aria-hidden="true" class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="currentColor"/></svg>
                 </a>
-                <span id="copyMessage" class="fade-in" style="margin:.5rem;color:var(--accent-color)">
-                    Copied!
-                </span>
+                <span id="copyMessage" role="alert" aria-live="assertive" style="color: var(--accent-color); display: none">Copied!</span>
             </div>
-            <a href="/assets/pdfs/max_sheridan_CV.pdf">
-                CV&#32;<svg aria-hidden="true" class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="currentColor"/></svg>
+            <a href="/assets/pdfs/max_sheridan_CV.pdf">CV&#32;<svg aria-hidden="true" class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="currentColor"/></svg>
             </a>
         </footer>
         <script type="application/ld+json">
