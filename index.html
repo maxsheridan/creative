@@ -283,18 +283,6 @@
         <script>document.getElementById("mail").addEventListener("click",function(event){event.preventDefault();const email=this.href.replace(/^mailto:/,"");navigator.clipboard.writeText(email).then(()=>{const message=document.getElementById("copyMessage");message.classList.add("show");setTimeout(()=>{message.classList.remove("show")},2000)})});</script>
         <script>document.addEventListener("DOMContentLoaded",function(){const lazyImages=document.querySelectorAll('img.lazy');const observer=new IntersectionObserver((entries,obs)=>{entries.forEach(entry=>{if(entry.isIntersecting){const img=entry.target;img.src=img.dataset.src;img.classList.remove("lazy");obs.unobserve(img)}})},{rootMargin:"400px 0px"});lazyImages.forEach(img=>{observer.observe(img)})});</script>
         <script>document.addEventListener('mousemove',()=>{document.body.style.pointerEvents='none';void document.body.offsetWidth;document.body.style.pointerEvents=''},{once:!0});</script>
-        <script>
-           document.querySelectorAll('.hover-color a').forEach(link => {
-  link.addEventListener('mouseenter', () => {
-    if (!link.classList.contains('active')) {
-      link.classList.add('hovering');
-    }
-  });
-
-  link.addEventListener('mouseleave', () => {
-    link.classList.remove('hovering');
-  });
-});
-        </script>
+        <script>document.querySelectorAll('.hover-color a').forEach(link=>{link.addEventListener('mouseenter',()=>{if(!link.classList.contains('active')){link.classList.add('hovering')}});link.addEventListener('mouseleave',()=>{link.classList.remove('hovering')})});</script>
     </body>
 </html>
