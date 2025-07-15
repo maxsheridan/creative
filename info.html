@@ -72,10 +72,10 @@
                 <span id="copyMessage" role="alert" aria-live="assertive" style="color: var(--accent-color); display: none">Copied!</span>
             </div>
             <a href="/assets/pdfs/max_sheridan_CV.pdf">
-                CV&#32;<svg aria-hidden="true" class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="var(--primary-color)"/></svg>
+                CV&#32;<svg aria-hidden="true" class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="currentColor"/></svg>
             </a>
         </footer>
         <script>function copyEmail(){const email="max@maxsheridan.com";navigator.clipboard.writeText(email).then(()=>{document.getElementById('copyMessage').style.display='inline';setTimeout(()=>{document.getElementById('copyMessage').style.display='none'},2000)}).catch(err=>{alert('Failed to copy email: '+err)})}</script>
-        <script>document.querySelectorAll('.hover-color a').forEach(link=>{link.addEventListener('mouseenter',()=>{if(!link.classList.contains('active')){link.classList.add('hovering');const path=link.querySelector('svg path');if(path)path.style.fill='var(--accent-color)'}});link.addEventListener('mouseleave',()=>{link.classList.remove('hovering');const path=link.querySelector('svg path');if(path)path.style.fill='var(--primary-color)'})});window.addEventListener('pageshow',(event)=>{document.querySelectorAll('.hover-color a.hovering').forEach(link=>{link.classList.remove('hovering');const path=link.querySelector('svg path');if(path)path.style.fill='var(--primary-color)'})});</script>
+        <script>window.addEventListener('pageshow',(event)=>{if(event.persisted){document.querySelectorAll('.hover-color a').forEach(link=>{link.classList.remove('hovering')});document.querySelectorAll('.hover-color a svg path').forEach(path=>{path.style.display='none';path.offsetHeight;path.style.display=''})}});</script>
     </body>
 </html>
