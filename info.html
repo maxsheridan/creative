@@ -77,6 +77,6 @@
         </footer>
         <script>function copyEmail(){const email="max@maxsheridan.com";navigator.clipboard.writeText(email).then(()=>{document.getElementById('copyMessage').style.display='inline';setTimeout(()=>{document.getElementById('copyMessage').style.display='none'},2000)}).catch(err=>{alert('Failed to copy email: '+err)})}</script>
         <script>document.addEventListener('mousemove',()=>{document.body.style.pointerEvents='none';void document.body.offsetWidth;document.body.style.pointerEvents=''},{once:!0});</script>
-        <script>document.querySelectorAll('.hover-color a').forEach(link=>{link.addEventListener('mouseenter',()=>{if(!link.classList.contains('active')){link.classList.add('hovering')}});link.addEventListener('mouseleave',()=>{link.classList.remove('hovering')})});</script>
+        <script>document.querySelectorAll('.hover-color a').forEach(link=>{link.addEventListener('mouseenter',()=>{if(!link.classList.contains('active')){link.classList.add('hovering')}});link.addEventListener('mouseleave',()=>{link.classList.remove('hovering')})});window.addEventListener('pageshow',()=>{document.querySelectorAll('.hover-color a.hovering').forEach(link=>{link.classList.remove('hovering')})});</script>
     </body>
 </html>
