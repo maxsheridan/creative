@@ -7,17 +7,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
         <meta name="color-scheme" content="light dark">
         <meta name="format-detection" content="telephone=no">
-        <link rel="preload" href="/assets/images/misfit_union.webp" as="image">
-        <link rel="preload" href="/assets/type/ABC_Diatype_Medium.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="/assets/type/ABC_Diatype.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="stylesheet" href="/style.css?v=3">
+        <link rel="preload" href="/assets/type/ABCDiatype-Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/assets/type/ABCDiatype-Medium.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="stylesheet" href="/style.css?v=4">
         <link rel="icon" sizes="32x32" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" sizes="any" href="/favicon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png" type="image/png">
         <link rel="manifest" href="/manifest.json" type="application/json">
         <link rel="canonical" href="https://creative.maxsheridan.com/info">
         <title>Info - Max Sheridan</title>
-        <meta name="description" content="I’m a copy/content writer with a background in creative writing and longform journalism.">
+        <meta name="description" content="I’m a copy/content writer with a background in creative writing and longform journalism and over 15 years’ experience developing copy and editorial content for print and web media across the globe.">
         <meta name="thumbnail" content="https://creative.maxsheridan.com/assets/graphics/share.webp">
         <meta property="og:site_name" content="creative.maxsheridan.com">
         <meta property="og:title" content="Max Sheridan">
@@ -67,14 +66,17 @@
         </main>
         <footer aria-label="Footer" class="margins-off linkstyling-off hover-color">
             <div class="margins-off">
-                <a href="#" onclick="copyEmail()">Email&#32;<svg aria-hidden="true" class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="currentColor"/></svg>
+                <a href="#" onclick="copyEmail()">Email<span aria-hidden="true" class="arrow-up-rgt">&#x2197;</span>
                 </a>
                 <span id="copyMessage" role="alert" aria-live="assertive" style="color: var(--accent-color); display: none">Copied!</span>
             </div>
-            <a href="/assets/pdfs/max_sheridan_CV.pdf" target="_blank" rel="noopener">
-                CV&#32;<svg aria-hidden="true" class="arrow-up-rgt" width="100%" height="100%" viewBox="0 0 173 172" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 172 150.463 39.238v110.34l21.832-21.832V0H43.96L22.127 21.537h111.225L0 155.183z" fill="currentColor"/></svg>
-            </a>
+            <div class="margins-off">
+                <a href="/assets/pdfs/max_sheridan_CV.pdf" onclick="openCV(event)">CV<span aria-hidden="true" class="arrow-up-rgt">&#x2197;</span>
+                </a>
+                <span id="openMessage" role="alert" aria-live="assertive" style="color: var(--accent-color); display: none">Opened!</span>
+            </div>
         </footer>
         <script>function copyEmail(){const email="max@maxsheridan.com";navigator.clipboard.writeText(email).then(()=>{document.getElementById('copyMessage').style.display='inline';setTimeout(()=>{document.getElementById('copyMessage').style.display='none'},2000)}).catch(err=>{alert('Failed to copy email: '+err)})}</script>
+        <script>function openCV(event){event.preventDefault();const msg=document.getElementById('openMessage');msg.style.display='inline';setTimeout(()=>{msg.style.display='none';window.location.href="/assets/pdfs/max_sheridan_CV.pdf"},500)}</script>
     </body>
 </html>
