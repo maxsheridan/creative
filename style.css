@@ -260,10 +260,6 @@ h1,h2 {
     font-weight: 500;
 }
 
-.left {
-    text-align: left;
-}
-
 .pull-quote {
     font-family: var(--heading-font);
     font-size: calc(var(--body-font-size) * 1.25);
