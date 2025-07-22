@@ -118,13 +118,6 @@ header {
     margin:unset;
 }
 
-hr.flex {
-    flex-grow: 1;
-    height: 1px;
-    background: transparent;
-    border-top: var(--border);
-}
-
 .logo {
     width: clamp(54px,6vw,60px);
     height: auto;
@@ -264,6 +257,10 @@ h1,h2 {
     margin-left: 0;
 }
 
+.big-gap {
+    margin-block: var(--medium-gap);
+}
+
 .red {
     color: var(--accent-color);
 }
@@ -292,8 +289,11 @@ hr {
     background: var(--accent-color);
 }
 
-hr.big-quote {
-    margin-block: var(--medium-gap);
+hr.dotted {
+    flex-grow: 1;
+    height: 1px;
+    background: transparent;
+    border-top: var(--border);
 }
 
 .vh {
