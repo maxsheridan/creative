@@ -296,6 +296,11 @@ hr.dotted {
     border-top: var(--border);
 }
 
+.thin-space {
+    display: inline-block;
+    width: 1px;
+}
+
 .vh {
     position: absolute;
     overflow: hidden;
