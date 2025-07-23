@@ -253,10 +253,6 @@ h1,h2 {
     text-align: center;
 }
 
-.tight {
-    margin-left: 0;
-}
-
 .big-gap {
     margin-block: var(--medium-gap);
 }
@@ -281,7 +277,6 @@ h1,h2 {
     font-size: calc(var(--body-font-size) * 1.25);
     line-height: 1;
     vertical-align: middle;
-    margin-left: 2px;
 }
 
 hr {
@@ -299,6 +294,16 @@ hr.dotted {
 .thin-space {
     display: inline-block;
     width: 1px;
+}
+
+.space {
+    display: inline-block;
+    width: .25rem;
+}
+
+.wide-space {
+    display: inline-block;
+    width: 1rem;
 }
 
 .vh {
@@ -331,7 +336,8 @@ hr.dotted {
         position: relative;
         width: 100%;
         height: 100%;
-        border: unset;
+        border-right: unset;
+        border-bottom: var(--border);
         background-color: var(--background-color);
     }
     nav {
@@ -339,6 +345,7 @@ hr.dotted {
         bottom: 0;
         width: 100%;
         z-index: 999;
+        border-bottom: var(--border);
     }
     nav ul {
         display: flex;
