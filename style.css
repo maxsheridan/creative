@@ -120,6 +120,7 @@ header {
 }
 
 .logo {
+    display: block;
     width: clamp(54px,6vw,60px);
     height: auto;
 }
