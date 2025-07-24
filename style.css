@@ -186,15 +186,16 @@ img {
     height: auto;
 }
 
+img.tall {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
 img.x-tall {
     max-width: 80%;
     margin: 0 auto;
 }
 
-img.tall {
-    max-width: 85%;
-    margin: 0 auto;
-}
 
 a {
     color: var(--primary-color);
@@ -369,5 +370,11 @@ hr.dotted {
     .acme-all-purpose-section-wrapper,
     .all-purpose-content-wrapper {
         padding-bottom: 5rem;
+    }
+    img.tall {
+        max-width: 90%;
+    }
+    img.x-tall {
+        max-width: 85%;
     }
 }
