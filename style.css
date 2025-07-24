@@ -337,7 +337,7 @@ hr.dotted {
         position: relative;
         width: 100%;
         height: 100%;
-        border-right: unset;
+        border: unset;
         background-color: var(--background-color);
     }
     nav {
