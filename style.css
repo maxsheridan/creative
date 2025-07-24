@@ -16,7 +16,7 @@
 
 :root {
     --gap: 1.25rem;
-    --medium-gap: calc(var(--gap) * 1.5);
+    --big-gap: calc(var(--gap) * 1.7);
     --border: 2px dotted;
     --body-font: 'ABCDiatype',system-ui,sans-serif;
     --heading-font: 'ABCDiatype Semi-Mono',monospace;
@@ -176,7 +176,7 @@ section:not(:last-child) {
 
 .media {
     display: flex;
-    margin-block-end: var(--medium-gap);
+    margin-block-end: var(--big-gap);
 }
 
 img {
@@ -250,16 +250,16 @@ h1,h2 {
     font-weight: 500;
 }
 
+.red {
+    color: var(--accent-color);
+}
+
 .center {
     text-align: center;
 }
 
 .big-gap {
-    margin-block: var(--medium-gap);
-}
-
-.red {
-    color: var(--accent-color);
+    margin-block: var(--big-gap);
 }
 
 .pull-quote {
