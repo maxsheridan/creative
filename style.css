@@ -196,7 +196,6 @@ img.x-tall {
     margin: 0 auto;
 }
 
-
 a {
     color: var(--primary-color);
     text-decoration: underline;
@@ -266,7 +265,7 @@ h1,h2 {
 
 .pull-quote {
     font-family: var(--heading-font);
-    font-size: calc(var(--body-font-size) * 1.25);
+    font-size: calc(var(--body-font-size) * 1.2);
     font-weight: 500;
     line-height: 1.3;
 }
