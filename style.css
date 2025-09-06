@@ -281,6 +281,12 @@ h1,h2 {
     vertical-align: middle;
 }
 
+.arrow-loop-rgt {
+    width: auto;
+    height: clamp(23px, 2vw, 24px);
+    vertical-align: middle;
+}
+
 hr {
     height: 2px;
     background: var(--accent-color);
