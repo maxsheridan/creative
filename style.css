@@ -219,16 +219,16 @@ nav a:hover {
     transition: color .3s ease;
 }
 
+a:not(nav a):hover {
+    opacity: .7;
+    transition: color .3s ease;
+}
+
 @media (hover:hover) and (pointer:fine) {
     a:not(nav a):hover {
         opacity: .7;
         transition: color .3s ease;
     }
-}
-
-a:not(nav a):hover {
-    opacity: .7;
-    transition: color .3s ease;
 }
 
 .linkstyling-off a {
