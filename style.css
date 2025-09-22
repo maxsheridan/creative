@@ -20,7 +20,7 @@
     --border: 2px dotted;
     --body-font: 'ABCDiatype',system-ui,sans-serif;
     --heading-font: 'ABCDiatype Semi-Mono',monospace;
-    --body-font-size: calc(1rem + .35vw);
+    --body-font-size: calc(1.05rem + .3vw);
     --primary-color: #161718;
     --accent-color: #BA1C26;
     --progress-color: lightgray;
