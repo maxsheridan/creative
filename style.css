@@ -207,13 +207,6 @@ a {
     transition: background-color .3s ease;
 }
 
-@media (hover:hover) and (pointer:fine) {
-    nav a:hover {
-        color: var(--accent-color);
-        transition: color .3s ease;
-    }
-}
-
 nav a:hover {
     color: var(--accent-color);
     transition: color .3s ease;
@@ -222,6 +215,13 @@ nav a:hover {
 a:not(nav a):hover {
     opacity: .7;
     transition: color .3s ease;
+}
+
+@media (hover:hover) and (pointer:fine) {
+    nav a:hover {
+        color: var(--accent-color);
+        transition: color .3s ease;
+    }
 }
 
 @media (hover:hover) and (pointer:fine) {
