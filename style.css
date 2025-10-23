@@ -290,8 +290,8 @@ hr {
 hr.dotted {
     flex-grow: 1;
     height: 1px;
-    background: transparent;
     border-top: var(--border);
+    background: transparent;
 }
 
 .thin-space {
