@@ -195,14 +195,14 @@ img.x-tall {
 
 h1,h2 {
     font-family: var(--heading);
-    font-size: calc(var(--paragraph) * 1.74);
+    font-size: calc(var(--paragraph) * 1.7);
     font-weight: 500;
     line-height: 1.3;
 }
 
 h3 {
     font-family: var(--heading);
-    font-size: calc(var(--paragraph) * 1.34);
+    font-size: calc(var(--paragraph) * 1.3);
     font-weight: 500;
     line-height: 1.3;
     color: var(--accent);
