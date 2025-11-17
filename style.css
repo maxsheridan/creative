@@ -20,7 +20,7 @@
     --border: 2px dotted;
     --body: 'ABCDiatype',system-ui,sans-serif;
     --heading: 'ABCDiatype Semi-Mono',monospace;
-    --paragraph: calc(1.13rem + .35vw);
+    --paragraph: calc(1.13rem + .3vw);
     --small-icon: calc(18px + .4vw);
     --primary: #161718;
     --accent: #BA1C26;
@@ -163,7 +163,7 @@ section:not(:last-child) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem 4rem;
+    padding: 6rem 4rem;
 }
 
 .words,
