@@ -109,6 +109,7 @@ header {
 }
 
 .short-description {
+    max-width: 50ch;
     margin-block-start: calc(var(--gap) + .5rem);
     font-size: calc(var(--paragraph) * .95);
 }
