@@ -93,7 +93,7 @@ header {
     justify-content: center;
     align-items: center;
     border-bottom: var(--border);
-    padding: 2.5rem 2rem 2rem;
+    padding: 2.5rem 1.5rem 2rem;
 }
 
 .logo-container {
@@ -390,7 +390,7 @@ hr.dotted {
 
     .section-inner,
     .main-inner {
-        padding: 4rem 2rem;
+        padding: 4rem 1.5rem;
     }
 
     .acme-all-purpose-section-wrapper,
