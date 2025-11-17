@@ -258,6 +258,10 @@ li {
     color: var(--accent);
 }
 
+.heading {
+    font-family: var(--heading);
+}
+
 .center {
     text-align: center;
 }
