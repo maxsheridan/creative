@@ -132,10 +132,6 @@ nav a.active {
     color: var(--accent);
 }
 
-.with-icon .arrow-up-rgt {
-    font-family: var(--body);
-}
-
 main {
     display: flex;
     justify-content: center;
@@ -288,15 +284,14 @@ li {
 }
 
 .arrow-up-rgt,.arrow-loop-rgt {
+    font-family: var(--body);
     font-size: var(--small-icon);
-    height: var(--small-icon);
     line-height: 1;
     vertical-align: text-bottom;
 }
 
 .arrow-up-rgt.nav-link {
-    font-size: calc(var(--small-icon) + 1px);
-    vertical-align: text-bottom;
+    font-size: calc(var(--small-icon) + 3px);
 }
 
 hr {
