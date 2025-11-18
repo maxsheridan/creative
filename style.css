@@ -100,6 +100,7 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
+    margin: unset;
 }
 
 .logo {
@@ -325,8 +326,9 @@ hr.dotted {
     width: 1rem;
 }
 
+/* equals 4 with owl margin-block-start = 2/3 bottom padding*/
 .spacer {
-    height: calc(var(--big-gap) * 1.5);
+    height: 2.75rem;
 }
 
 .vh {
@@ -390,14 +392,19 @@ hr.dotted {
         width: 100%;
     }
 
+    /* section inner padding + 1rem footer padding  */
+    .acme-all-purpose-section-wrapper {
+        padding-bottom: 5rem;
+    }
+
+    /* header padding + 1rem footer padding  */
+    .acme-all-purpose-content-wrapper {
+        padding-bottom: 3.5rem;
+    }
+
     .section-inner,
     .main-inner {
         padding: 4rem 1.5rem;
-    }
-
-    .acme-all-purpose-section-wrapper,
-    .all-purpose-content-wrapper {
-        padding-bottom: 5rem;
     }
 
     img.tall {
