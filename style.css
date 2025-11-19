@@ -112,8 +112,7 @@ header {
 .short-description {
     max-width: 50ch;
     margin-block-start: calc(var(--gap) + .5rem);
-    font-family: var(--heading);
-    font-size: calc(var(--paragraph) * .85);
+    font-family: var(--paragraph);
 }
 
 nav {
