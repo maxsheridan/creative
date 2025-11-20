@@ -311,11 +311,6 @@ hr.dotted {
     width: 1px;
 }
 
-.emoji-space {
-    display: inline-block;
-    width: .25rem;
-}
-
 .space {
     display: inline-block;
     width: .75rem;
