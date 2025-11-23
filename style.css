@@ -410,3 +410,18 @@ hr.dotted {
         max-width: 85%;
     }
 }
+
+body.utility main {
+    min-height:100vh;
+    min-height:100dvh;
+    width:100%;
+}
+
+body.utility .arrow-loop-rgt {
+    width:auto;
+    height:calc(var(--small-icon) - 4px)
+} 
+
+body.utility .thin-space {
+    width: 4px;
+}
