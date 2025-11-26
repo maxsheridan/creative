@@ -412,14 +412,15 @@ hr.dotted {
 }
 
 body.utility main {
-    min-height:100vh;
-    min-height:100dvh;
-    width:100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+    width: 100%;
 }
 
 body.utility .arrow-loop-rgt {
-    width:auto;
-    height:calc(var(--small-icon) - 4px)
+    width: 1em;
+    height: auto;
+    vertical-align: text-bottom;
 } 
 
 body.utility .thin-space {
