@@ -28,7 +28,6 @@
     --body: 'ABCDiatype', system-ui, sans-serif;
     --heading: 'ABCDiatype Semi-Mono', monospace;
     --paragraph: calc(1.13rem + .3vw);
-    --glyph: calc(18px + .4vw);
     --primary: #161718;
     --accent: #BA1C26;
     --progress: lightgray;
@@ -209,19 +208,21 @@ section:not(:last-child) {
     padding: 6rem 4rem;
 }
 
-.section-inner > * + *,
-.main-inner > * + *,
-article {
-    margin-block-start: var(--space-2);
+.section-inner > * + * {
+    margin-block-start: var(--space-3)
+}
+
+.words,
+.media {
+    max-width: 50ch;
 }
 
 .words > * + * {
     margin-block-start: var(--space-1);
 }
 
-.words,
-.media {
-    max-width: 50ch;
+.words.with-subheading > * + * {
+    margin-block-start: var(--space-2);
 }
 
 .media {
@@ -299,6 +300,10 @@ input:focus-visible {
     text-decoration: none;
 }
 
+ul:not(nav ul) * + * {
+    margin-block-start: var(--space--1);
+}
+
 li {
     list-style-type: none;
 }
@@ -336,13 +341,13 @@ li {
 
 .arrow-up-rgt {
     font-family: var(--body);
-    font-size: var(--glyph);
-    line-height: 1;
+    font-size: 1.25em;
+    line-height: .85;
     vertical-align: text-bottom;
 }
 
 .arrow-up-rgt.nav-link {
-    font-size: calc(var(--glyph) + 3px);
+    font-size: 1.3em;
 }
 
 hr:not(.dotted) {
