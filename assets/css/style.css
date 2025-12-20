@@ -15,11 +15,11 @@
 }
 
 :root {
-    --ratio: 1.2;
+    --ratio: 1.4;
     --space--3: calc(var(--space--2) / var(--ratio));
     --space--2: calc(var(--space--1) / var(--ratio));
     --space--1: calc(var(--space-0) / var(--ratio));
-    --space-0: calc(1rem + .5vw); 
+    --space-0: calc(1rem + .3vw); 
     --space-1: calc(var(--space-0) * var(--ratio));
     --space-2: calc(var(--space-1) * var(--ratio));
     --space-3: calc(var(--space-2) * var(--ratio));
