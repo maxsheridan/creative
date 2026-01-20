@@ -351,17 +351,16 @@ li {
     font-size: 1.325em;
 }
 
-hr:not(.dotted) {
-    height: 2px;
-    background: var(--accent);
-    margin-block-start: var(--space-2);
-    margin-block-end: var(--space-2);
-}
-
 hr.dotted {
     flex-grow: 1;
-    height: 1px;
-    border-top: var(--border);
+    border-top: var(--border) var(--primary);
+    background: transparent;
+}
+
+hr.dotted.accent {
+    margin-block-start: var(--space-2);
+    margin-block-end: var(--space-2);
+    border-top: var(--border) var(--accent);
     background: transparent;
 }
 
