@@ -121,7 +121,7 @@ body {
 }
 
 .sidebar-hoodoo {
-    width: 33.33%
+    width: 33.33%;
 }
 
 .sidebar {
@@ -264,6 +264,7 @@ h3 {
 a {
     color: var(--primary);
     text-decoration: underline;
+    text-decoration-style:dotted;
     text-decoration-thickness: 2px;
     text-decoration-color: var(--accent);
     text-underline-offset: 3px;
