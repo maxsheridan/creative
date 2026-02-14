@@ -72,26 +72,6 @@ body {
     background-color: var(--background);
 }
 
-.gap--3 {
-    display: inline-block;
-    width: var(--space--3);
-}
-
-.gap--2 {
-    display: inline-block;
-    width: var(--space--2);
-}
-
-.gap--1 {
-    display: inline-block;
-    width: var(--space--1);
-}
-
-.thin-space {
-    display: inline-block;
-    width: 1px;
-}
-
 .acme-all-purpose-wrapper {
     display: flex;
 }
@@ -140,6 +120,8 @@ header > * + * {
     display: block;
     width: 2.2em;
     height: auto;
+    margin-inline-start: var(--space--2);
+    margin-inline-end: var(--space--2);
 }
 
 .short-description {
@@ -305,6 +287,14 @@ li {
 
 .red {
     color: var(--accent);
+}
+
+.slash {
+    padding: 0 .2rem;
+}
+
+.with-gap {
+    margin-inline-end: var(--space--1);
 }
 
 .pull-quote {
