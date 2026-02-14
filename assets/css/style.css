@@ -250,14 +250,16 @@ a {
     transition: background-color .3s ease;
 }
 
+.linkstyling-off a {
+    text-decoration: none;
+}
+
 @media (hover:hover) and (pointer:fine) {
     nav a:hover {
         color: var(--accent);
         transition: color .3s ease;
     }
-}
 
-@media (hover:hover) and (pointer:fine) {
     a:not(nav a):hover {
         opacity: .7;
         transition: color .3s ease;
@@ -273,8 +275,8 @@ input:focus-visible {
     border-radius: .25rem;
 }
 
-.linkstyling-off a {
-    text-decoration: none;
+[tabindex="-1"]:focus {
+    outline: none;
 }
 
 ul:not(nav ul) * + * {
@@ -364,7 +366,7 @@ hr.dotted.accent {
 }   
 
 .skip-link:focus {
-    top: .3rem;
+    top: .5rem;
 } 
 
 @media (max-width:960px) {
