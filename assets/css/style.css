@@ -377,11 +377,11 @@ hr.dotted.accent {
     }
 
     img.tall {
-        max-width: min(500px, 90%);
+        max-width: min(500px, 95%);
     }
 
     img.x-tall {
-        max-width: min(425px, 90%);
+        max-width: min(425px, 95%);
     }
 }
 
