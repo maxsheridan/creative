@@ -11,7 +11,7 @@
         <link rel="preload" href="/assets/type/abcdiatype_semi-mono_medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
         <link rel="preload" href="/assets/type/abcdiatype_regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
         <style>video{width:100%;height:auto;object-fit:cover;aspect-ratio:16/9}.video-player{max-width:100%;padding:1rem;border:2px solid var(--progress);border-radius:.25rem;background:var(--background);-webkit-tap-highlight-color:#fff0;outline:none;touch-action:manipulation}.controls{display:flex;align-items:center;margin-block-start:.5rem}.play-pause{display:flex;align-items:center;justify-content:center;width:22px;height:22px;margin-right:.5rem;padding:0;border:0;border-radius:50%;background-color:var(--accent);cursor:pointer}.play-pause .icon{width:75%;height:75%}.play-pause.play .icon polygon{fill:var(--background)}.play-pause.pause .icon rect{fill:var(--background)}.progress{position:relative;flex:1;height:2px;background-color:var(--progress);cursor:pointer}.progress-filled{width:0%;height:100%;background-color:var(--accent)}.progress input{position:absolute;top:-.45rem;width:100%;height:16px;margin:0;border:0;background:#fff0;-webkit-appearance:none;-moz-appearance:none;appearance:none;cursor:auto}.progress input::-webkit-slider-thumb{width:10px;height:10px;margin:0;border:0;border-radius:50%;background-color:var(--accent);-webkit-appearance:none;appearance:none;cursor:pointer}.progress input::-moz-range-thumb{width:10px;height:10px;margin:0;border:0;border-radius:50%;background-color:var(--accent);cursor:pointer;-moz-appearance:none;appearance:none;cursor:pointer}</style>
-        <link rel="stylesheet" href="/assets/css/style.min.css?v=3">
+        <link rel="stylesheet" href="/assets/css/style.min.css?v=4">
         <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="32x32">
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
         <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png" type="image/png">
@@ -31,344 +31,339 @@
         <meta property="og:image:height" content="720">
     </head>
     <body>
-        <div class="acme-all-purpose-wrapper">
-            <div class="sidebar-hoodoo"></div>
-            <div class="sidebar linkstyling-off">
-                <a href="#main-content" class="skip-link">Skip to content</a>
-                <header>
-                    <div class="logo-container">
-                        <hr class="dotted" aria-hidden="true">
-                        <a href="/">
-                            <svg class="logo" viewBox="0 0 100 100" aria-label="Max Sheridan home" role="img">
-                                <path fill="var(--primary)" d="M6.75 99.97.2 100l39.6-27.04 6.22.02zm13.51 0-6.57.03L53.3 72.96l6.21.02zm13.52 0-6.57.03 39.61-27.04 6.21.02zm13.51 0-6.57.03 39.61-27.04 6.22.02zm13.51 0-6.57.03 39.62-27.04 6.2.02z"/>
-                                <path fill="var(--background)" d="M29.82 0H100v72.96H29.82z"/>
-                                <path fill="var(--primary)" d="M42.75 18.74c.21 2.5.05 4.94 0 7.57l1.74-.05c1.59 0 2.6.85 2.7 3.15.21 3.53.16 10.4 0 14.02-.05 1.88-.74 2.82-2.7 2.82l-1.69-.05q.32 4 0 8c2.06-.19 16.18-.19 18.4 0 0-2.54-.15-5.46 0-8h-2.59c-1.85 0-2.64-1.12-2.7-2.91-.1-2.26-.1-4.23-.1-6.87 0-2.35-.21-5.27-.69-7.9l.59-.23c2.32 5.17 4.7 10.81 6.02 15.66 2.33-.2 3.7-.14 5.3-.1 1.16-3.67 3.7-9.87 6.18-15.61l.63.05a169.23 150.5 0 0 0-.74 15.05c0 1.78-1.16 2.91-3.01 2.91l-2.43-.05c0 2.54.16 5.37 0 8 1.9-.19 16.5-.19 19.04 0a66 66 0 0 1 0-7.9l-1.22.04c-2.38 0-3.12-1.08-3.17-2.86-.16-3.95.05-10.96.26-14.86 0-1.6 1.59-2.4 3.17-2.4l1.33.04c-.27-2.77-.22-4.84-.16-7.52-2.12.19-14.07 0-16.08 0-.53 2.07-3.33 8.93-5.71 13.4-2.38-4.23-5.08-10.96-5.4-13.4-2.38.19-14.7.19-16.92 0M0 93.26l29.92-20.42V.08L0 20.51z"/>
-                            </svg>
-                        </a>
-                        <hr class="dotted" aria-hidden="true">
+        <div class="sidebar-hoodoo"></div>
+        <div class="sidebar linkstyling-off">
+            <a href="#main-content" class="skip-link">Skip to content</a>
+            <header>
+                <div class="logo-container">
+                    <hr class="dotted" aria-hidden="true">
+                    <a href="/">
+                        <svg class="logo" viewBox="0 0 100 100" aria-label="Max Sheridan home" role="img">
+                            <path fill="var(--primary)" d="M6.75 99.97.2 100l39.6-27.04 6.22.02zm13.51 0-6.57.03L53.3 72.96l6.21.02zm13.52 0-6.57.03 39.61-27.04 6.21.02zm13.51 0-6.57.03 39.61-27.04 6.22.02zm13.51 0-6.57.03 39.62-27.04 6.2.02z"/>
+                            <path fill="var(--background)" d="M29.82 0H100v72.96H29.82z"/>
+                            <path fill="var(--primary)" d="M42.75 18.74c.21 2.5.05 4.94 0 7.57l1.74-.05c1.59 0 2.6.85 2.7 3.15.21 3.53.16 10.4 0 14.02-.05 1.88-.74 2.82-2.7 2.82l-1.69-.05q.32 4 0 8c2.06-.19 16.18-.19 18.4 0 0-2.54-.15-5.46 0-8h-2.59c-1.85 0-2.64-1.12-2.7-2.91-.1-2.26-.1-4.23-.1-6.87 0-2.35-.21-5.27-.69-7.9l.59-.23c2.32 5.17 4.7 10.81 6.02 15.66 2.33-.2 3.7-.14 5.3-.1 1.16-3.67 3.7-9.87 6.18-15.61l.63.05a169.23 150.5 0 0 0-.74 15.05c0 1.78-1.16 2.91-3.01 2.91l-2.43-.05c0 2.54.16 5.37 0 8 1.9-.19 16.5-.19 19.04 0a66 66 0 0 1 0-7.9l-1.22.04c-2.38 0-3.12-1.08-3.17-2.86-.16-3.95.05-10.96.26-14.86 0-1.6 1.59-2.4 3.17-2.4l1.33.04c-.27-2.77-.22-4.84-.16-7.52-2.12.19-14.07 0-16.08 0-.53 2.07-3.33 8.93-5.71 13.4-2.38-4.23-5.08-10.96-5.4-13.4-2.38.19-14.7.19-16.92 0M0 93.26l29.92-20.42V.08L0 20.51z"/>
+                        </svg>
+                    </a>
+                    <hr class="dotted" aria-hidden="true">
+                </div>
+                <div class="short-description"> 
+                    <p>
+                        Hi, I’m Max.👋 I’m a creative copy<span class="slash">/</span>content writer based in Sweden, working globally.
+                    </p>
+                </div>
+            </header>
+            <h2 id="nav-label" class="vh">Main Menu</h2>
+            <nav aria-labelledby="nav-label">
+                <ul>
+                    <li>
+                        <a href="/" class="active">Work</a>
+                    </li>
+                    <li>
+                        <a href="/info">Info</a>
+                    </li>
+                    <li>
+                        <a href="/now">Now</a>
+                    </li>
+                    <li>
+                        <a href="/assets/pdfs/max_sheridan_cv.pdf" aria-label="Open CV">CV<span class="arrow-up-rgt nav-link" aria-hidden="true">&#x2197;</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <main id="main-content" tabindex="-1">
+            <h1 class="vh">Selected Projects</h1>
+            <section aria-labelledby="misfit-union-heading">
+                <div class="inner">
+                    <div class="media">
+                        <img class="x-tall" 
+                            src="/assets/images/misfit_union.webp"
+                            fetchpriority="high" 
+                            width="558" height="750"
+                            alt="Misfit Union Doypack pouch with text">
                     </div>
-                    <div class="short-description"> 
+                    <div>
+                        <h2 id="misfit-union-heading">
+                            Misfit Union
+                        </h2>
+                        <h3>
+                            Package Copy
+                        </h3>
                         <p>
-                            Hi, I’m Max.👋 I’m a creative copy<span class="slash">/</span>content writer based in Sweden, working globally.
+                            An edgy brand story for a maverick start-up on a mission to change the way people bought and consumed food. Package design by RTD.
+                        </p>
+                        <hr class="dotted accent" aria-hidden="true">
+                        <figure aria-label="Quote">
+                            <p class="pull-quote">
+                                “Way to go, misfit. You’ve just saved the planet 9 truck trips and made a local farmer happy. And you’re eating good, clean, hand-prepared food that doesn’t come with any ingredients you can’t pronounce. So happy, healthy eating. Enjoy every ounce of this nutrition-packed meal before you recycle our eco-package. Try a new combina&shy;tion every time. And, please, you keep doing you. Don’t fit in. Join the evolution.”
+                            </p>
+                        </figure>
+                    </div>
+                </div>   
+            </section>
+            <section aria-labelledby="tekton-heading">
+                <div class="inner">
+                    <div class="media">
+                        <div class="video-player">
+                            <video preload="none" poster="/assets/images/tekton.webp" title="Code Free Algotrading words by Max Sheridan" aria-hidden="true">
+                                <source src="/assets/video/code_free_algotrading.mp4" type="video/mp4">
+                                Your browser does not support the video tag. 
+                            </video>
+                            <div class="controls">
+                                <button class="play-pause play" aria-label="Play video">
+                                    <svg class="icon" viewBox="0 0 30 30">
+                                        <polygon points="10,6.9 10,23.1 24,15" fill="currentColor">
+                                        </polygon>
+                                    </svg>
+                                </button>
+                                <div class="progress">
+                                    <div class="progress-filled"></div>
+                                    <input
+                                        type="range"
+                                        value="0"
+                                        max="100"
+                                        step="0.1"
+                                        aria-label="Progress">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <noscript>
+                        <p class="red">Please enable JavaScript to play this video.</p>
+                    </noscript>
+                    <div>
+                        <h2 id="tekton-heading">
+                            Tekton
+                        </h2>
+                        <h3>
+                            Video Script
+                        </h3>
+                        <p>
+                            Making fiendishly difficult math hip and simple. The talented folks at Navajo Digital made this video from my script. Play it!
+                        </p>   
+                    </div>
+                </div>
+            </section>
+            <section aria-labelledby="reforest-nicosia-heading">
+                <div class="inner">
+                    <div class="media">
+                        <img 
+                            src="/assets/images/reforest_nicosia.webp"
+                            loading="lazy"
+                            width="1000" height="750" 
+                            alt="Reforest Nicosia homepage">
+                    </div>    
+                    <div>
+                        <h2 id="reforest-nicosia-heading">
+                            Reforest Nicosia
+                        </h2>
+                        <h3>
+                            Brand Voice
+                        </h3>
+                        <p>
+                            One part Don’t Look Up, three parts hard hope, Reforest Nicosia’s new brand voice (and its awesome new website) is kick&shy;starting the fight against climate change in one of Europe’s least green capitals.
+                        </p>
+                        <hr class="dotted accent" aria-hidden="true">
+                        <figure aria-label="Quote">
+                            <p class="pull-quote">
+                                “We’re Reforest Nicosia, a grassroots team of local organisers, environ&shy;mental experts, and community volunteers. We’ve planted over 10,000 trees in the wider Nicosia area so far. Our goal is to plant 300,000 — one tree for every resident of the city. (That’s you!) Join our effort to save the planet. Help us green Cyprus.”
+                            </p>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section aria-labelledby="medovie-heading">
+                <div class="inner">
+                    <div class="media">
+                        <img class="tall" 
+                            src="/assets/images/medovie.webp"
+                            loading="lazy"
+                            width="999" height="1200"
+                            alt="Medovie copywriting samples">
+                    </div>
+                    <div>
+                        <h2 id="medovie-heading">
+                            Medovie
+                        </h2>
+                        <h3>
+                            Copywriting
+                        </h3>
+                        <p>
+                            The story of a natural skincare company told from start to finish over four weeks and 400 cups of coffee. Deliverables included: website and package copy, articles, user stories, socials, marketing emails, video scripts, and a ton of micro­copy.
                         </p>
                     </div>
-                </header>
-                <h2 id="nav-label" class="vh">Main Menu</h2>
-                <nav aria-labelledby="nav-label">
-                    <ul>
-                        <li>
-                            <a href="/" class="active">Work</a>
-                        </li>
-                        <li>
-                            <a href="/info">Info</a>
-                        </li>
-                        <li>
-                            <a href="/now">Now</a>
-                        </li>
-                        <li>
-                            <a href="/assets/pdfs/max_sheridan_cv.pdf" aria-label="Open CV">CV<span class="arrow-up-rgt nav-link" aria-hidden="true">&#x2197;</span></a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <main id="main-content" tabindex="-1">
-                <div class="acme-all-purpose-section-wrapper">
-                    <h1 class="vh">Selected Projects</h1>
-                    <section aria-label="Project 1 of 9: Misfit Union">
-                        <div class="section-inner">
-                            <div class="media">
-                                <img class="x-tall" 
-                                    src="/assets/images/misfit_union.webp"
-                                    fetchpriority="high" 
-                                    width="558" height="750"
-                                    alt="Misfit Union Doypack pouch with text">
-                            </div>
-                            <div class="words">
-                                <h2>
-                                    Misfit Union
-                                </h2>
-                                <h3>
-                                    Package Copy
-                                </h3>
-                                <p>
-                                    An edgy brand story for a maverick start-up on a mission to change the way people bought and consumed food. Package design by RTD.
-                                </p>
-                                <hr class="dotted accent" aria-hidden="true">
-                                <figure aria-label="Quote">
-                                    <p class="pull-quote">
-                                        “Way to go, misfit. You’ve just saved the planet 9 truck trips and made a local farmer happy. And you’re eating good, clean, hand-prepared food that doesn’t come with any ingredients you can’t pronounce. So happy, healthy eating. Enjoy every ounce of this nutrition-packed meal before you recycle our eco-package. Try a new combina&shy;tion every time. And, please, you keep doing you. Don’t fit in. Join the evolution.”
-                                    </p>
-                                </figure>
-                            </div>
-                        </div>   
-                    </section>
-                    <section aria-label="Project 2 of 9: Tekton">
-                        <div class="section-inner">
-                            <div class="media">
-                                <div class="video-player">
-                                    <video preload="none" poster="/assets/images/tekton.webp" title="Code Free Algotrading words by Max Sheridan" aria-hidden="true">
-                                        <source src="/assets/video/code_free_algotrading.mp4" type="video/mp4">
-                                        Your browser does not support the video tag. 
-                                    </video>
-                                    <div class="controls">
-                                        <button class="play-pause play" aria-label="Play video">
-                                            <svg class="icon" viewBox="0 0 30 30">
-                                                <polygon points="10,6.9 10,23.1 24,15" fill="currentColor">
-                                                </polygon>
-                                            </svg>
-                                        </button>
-                                        <div class="progress">
-                                            <div class="progress-filled"></div>
-                                            <input
-                                                type="range"
-                                                value="0"
-                                                max="100"
-                                                step="0.1"
-                                                aria-label="Progress"
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <noscript>
-                                <p class="red">Please enable JavaScript to play this video.</p>
-                            </noscript>
-                            <div class="words">
-                                <h2>
-                                Tekton
-                                </h2>
-                                <h3>
-                                Video Script
-                                </h3>
-                                <p>
-                                Making fiendishly difficult math hip and simple. The talented folks at Navajo Digital made this video from my script. Play it!
-                                </p>   
-                            </div>
-                        </div>
-                    </section>
-                    <section aria-label="Project 3 of 9: Reforest Nicosia">
-                        <div class="section-inner">
-                            <div class="media">
-                                <img 
-                                    src="/assets/images/reforest_nicosia.webp"
-                                    loading="lazy"
-                                    width="1000" height="750" 
-                                    alt="Reforest Nicosia homepage">
-                            </div>    
-                            <div class="words">
-                                <h2>
-                                    Reforest Nicosia
-                                </h2>
-                                <h3>
-                                    Brand Voice
-                                </h3>
-                                <p>
-                                    One part Don’t Look Up, three parts hard hope, Reforest Nicosia’s new brand voice (and its awesome new website) is kick&shy;starting the fight against climate change in one of Europe’s least green capitals.
-                                </p>
-                                <hr class="dotted accent" aria-hidden="true">
-                                <figure aria-label="Quote">
-                                    <p class="pull-quote">
-                                        “We’re Reforest Nicosia, a grassroots team of local organisers, environ&shy;mental experts, and community volunteers. We’ve planted over 10,000 trees in the wider Nicosia area so far. Our goal is to plant 300,000 — one tree for every resident of the city. (That’s you!) Join our effort to save the planet. Help us green Cyprus.”
-                                    </p>
-                                </figure>
-                            </div>
-                        </div>
-                    </section>
-                    <section aria-label="Project 4 of 9: Medovie">
-                        <div class="section-inner">
-                            <div class="media">
-                                <img 
-                                    src="/assets/images/medovie.webp"
-                                    loading="lazy"
-                                    width="999" height="1200"
-                                    alt="Medovie copywriting samples">
-                            </div>
-                            <div class="words">
-                                <h2>
-                                    Medovie
-                                </h2>
-                                <h3>
-                                    Copywriting
-                                </h3>
-                                <p>
-                                    The story of a natural skincare company told from start to finish over four weeks and 400 cups of coffee. Deliverables included: website and package copy, articles, user stories, socials, marketing emails, video scripts, and a ton of micro­copy.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <section aria-label="Project 5 of 9: Bank of Cyprus">
-                        <div class="section-inner">
-                            <div class="media">
-                                <img 
-                                    src="/assets/images/boc.webp"
-                                    loading="lazy"
-                                    width="1200" height="737"
-                                    alt="Screens from Bank of Cyprus mobile app">
-                            </div>
-                            <div class="words">
-                                <h2>
-                                    Bank of Cyprus
-                                </h2>
-                                <h3>
-                                    UX Writing
-                                </h3>
-                                <p>
-                                    A refresh of a popular banking app with oodles of micro­copy that needed a pin&shy;point user journey.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <section aria-label="Project 6 of 9: BECCA Europe">
-                        <div class="section-inner">
-                            <div class="media">
-                                <img class="tall" 
-                                    src="/assets/images/becca_europe.webp"
-                                    loading="lazy" 
-                                    width="987" height="1000"
-                                    alt="BECCA Europe graphic">
-                            </div>
-                            <div class="words">
-                                <h2>
-                                    BECCA Europe
-                                </h2>
-                                <h3>
-                                    Creative Direction
-                                </h3>
-                                <p>
-                                    A complete rebrand of a pioneering arts funding consultancy with a focus on stories, not stats. I designed the visual identity and website, and wrote the website copy and monthly newsletters. 
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <section aria-label="Project 7 of 9: WP Clone">
-                        <div class="section-inner">
-                            <div class="media">
-                                <img 
-                                    src="/assets/images/wp_clone.webp"
-                                    loading="lazy"
-                                    width="1200" height="850"
-                                    alt="Content from the WP Clone website" >
-                            </div>
-                            <div class="words">
-                                <h2>
-                                    WP Clone
-                                </h2>
-                                <h3>
-                                    Website Writing
-                                </h3>
-                                <p>
-                                    Helping an SaaS start-up with a highly technical audience get their selling points across without sounding like an IT manual.
-                                </p>
-                                <hr class="dotted accent" aria-hidden="true">
-                                <span class="vh">Quote:</span>
-                                <figure aria-label="Quote">
-                                    <p class="pull-quote">
-                                        “Sock-rocking WordPress manage&shy;ment bundles that will make your wallet happy.”
-                                    </p>
-                                </figure>
-                            </div>
-                        </div>
-                    </section>
-                    <section aria-label="Project 8 of 9: Centerfield Media">
-                        <div class="section-inner">
-                            <div class="media">
-                                <img 
-                                    src="/assets/images/centerfield.webp"
-                                    loading="lazy"
-                                    width="800" height="600"
-                                    alt="Photo illustration of a phishing attack"> 
-                            </div>                 
-                            <div class="words">
-                                <h2>
-                                    Centerfield Media
-                                </h2>
-                                <h3>
-                                    Content<span class="slash">/</span>SEO Writing
-                                </h3>
-                                <p>
-                                    I’ve written a lot of stories over the years — under my own name and as a ghost&shy;writer. Here are a few links to my latest work at Centerfield Media. (The little 👻 means I wrote it but you won’t see my name on it.)
-                                </p>
-                                <ul>
-                                    <li>
-                                        <a href="https://www.safehome.org/home-security-cameras/turn-old-phone-into-security-camera/">How to Turn Your Old Phone Into a Home Security Camera <span class="arrow-up-rgt" aria-hidden="true">&#x2197;</span>
-                                    </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://longform.maxsheridan.com/tech/porch-pirates">Is Your Home a Magnet for Porch Pirates? <span class="arrow-up-rgt" aria-hidden="true">&#x2197;</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://longform.maxsheridan.com/tech/parental-controls">Her Six-Year-Old Spent $16,000 in the App Store <span class="arrow-up-rgt" aria-hidden="true">&#x2197;</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://longform.maxsheridan.com/tech/holiday-scams">‘Twas the Night After Black Friday and the Fraudsters Were Stirring <span class="arrow-up-rgt" aria-hidden="true">&#x2197;</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.safehome.org/news/celebrity-home-security-systems/">These Celebrity Home Security Systems Will Blow Your Mind 👻 <span class="arrow-up-rgt" aria-hidden="true">&#x2197;</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    <section aria-label="Project 9 of 9: Longform">
-                        <div class="section-inner">
-                            <div class="media">
-                                <img 
-                                    src="/assets//images/longform.webp"
-                                    loading="lazy"
-                                    width="1600" height="1200"
-                                    alt="Photo illustration of influencers acculumating likes"> 
-                            </div>                 
-                            <div class="words">
-                                <h2>
-                                    Journalism
-                                </h2>
-                                <h3>
-                                    Article Writing
-                                </h3>
-                                <p>
-                                    This is a small selection of the articles I’ve written for news outlets, clients, and blogs. Read more of my work on Medium at <a href="https://medium.com/copy-cat">Copy Cat.</a>
-                                </p>
-                                <ul>
-                                    <li>
-                                        <a href="https://longform.maxsheridan.com/web-writing/hype-house">Hype House: The Death of Content As We Know It <span class="arrow-up-rgt" aria-hidden="true">&#x2197;</span>
-                                    </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://longform.maxsheridan.com/web-writing/storytelling">Stories Are More Memorable Than Facts: Debunking the Internet’s Most Popular Storytelling Statistic.  <span class="arrow-up-rgt" aria-hidden="true">&#x2197;</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://longform.maxsheridan.com/marketing/digital-transformation">Planning a Top-to-Bottom Digital Transformation? Ask These Three Questions First. <span class="arrow-up-rgt" aria-hidden="true">&#x2197;</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://longform.maxsheridan.com/feature/free-love-after-the-apocalypse">Free Love After the Apocalypse: The World According to Uptopos of Makounta <span class="arrow-up-rgt" aria-hidden="true">&#x2197;</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://longform.maxsheridan.com/feature/let-us-now-praise-abnormal-men">Let Us Now Praise Abnormal Men: An Interview with Uri Geller<span class="arrow-up-rgt" aria-hidden="true">&#x2197;</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div class="logo-container bottom">
-                                    <hr class="dotted" aria-hidden="true">
-                                        <svg class="logo" viewBox="0 0 100 100" aria-label="Max Sheridan logo" role="img">
-                                            <path fill="var(--primary)" d="M6.75 99.97.2 100l39.6-27.04 6.22.02zm13.51 0-6.57.03L53.3 72.96l6.21.02zm13.52 0-6.57.03 39.61-27.04 6.21.02zm13.51 0-6.57.03 39.61-27.04 6.22.02zm13.51 0-6.57.03 39.62-27.04 6.2.02z"/>
-                                            <path fill="var(--background)" d="M29.82 0H100v72.96H29.82z"/>
-                                            <path fill="var(--primary)" d="M42.75 18.74c.21 2.5.05 4.94 0 7.57l1.74-.05c1.59 0 2.6.85 2.7 3.15.21 3.53.16 10.4 0 14.02-.05 1.88-.74 2.82-2.7 2.82l-1.69-.05q.32 4 0 8c2.06-.19 16.18-.19 18.4 0 0-2.54-.15-5.46 0-8h-2.59c-1.85 0-2.64-1.12-2.7-2.91-.1-2.26-.1-4.23-.1-6.87 0-2.35-.21-5.27-.69-7.9l.59-.23c2.32 5.17 4.7 10.81 6.02 15.66 2.33-.2 3.7-.14 5.3-.1 1.16-3.67 3.7-9.87 6.18-15.61l.63.05a169.23 150.5 0 0 0-.74 15.05c0 1.78-1.16 2.91-3.01 2.91l-2.43-.05c0 2.54.16 5.37 0 8 1.9-.19 16.5-.19 19.04 0a66 66 0 0 1 0-7.9l-1.22.04c-2.38 0-3.12-1.08-3.17-2.86-.16-3.95.05-10.96.26-14.86 0-1.6 1.59-2.4 3.17-2.4l1.33.04c-.27-2.77-.22-4.84-.16-7.52-2.12.19-14.07 0-16.08 0-.53 2.07-3.33 8.93-5.71 13.4-2.38-4.23-5.08-10.96-5.4-13.4-2.38.19-14.7.19-16.92 0M0 93.26l29.92-20.42V.08L0 20.51z"/>
-                                        </svg>
-                                    <hr class="dotted" aria-hidden="true">
-                                </div>
-                            </div>
-                        </div>
-                    </section>
                 </div>
-            </main>
-        </div>
+            </section>
+            <section aria-labelledby="boc-heading">
+                <div class="inner">
+                    <div class="media">
+                        <img 
+                            src="/assets/images/boc.webp"
+                            loading="lazy"
+                            width="1200" height="737"
+                            alt="Screens from Bank of Cyprus mobile app">
+                    </div>
+                    <div>
+                        <h2 id="boc-heading">
+                            Bank of Cyprus
+                        </h2>
+                        <h3>
+                            UX Writing
+                        </h3>
+                        <p>
+                            A refresh of a popular banking app with oodles of micro­copy that needed a pin&shy;point user journey.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section aria-labelledby="becca-europe-heading">
+                <div class="inner">
+                    <div class="media">
+                        <img class="tall" 
+                            src="/assets/images/becca_europe.webp"
+                            loading="lazy" 
+                            width="987" height="1000"
+                            alt="BECCA Europe graphic">
+                    </div>
+                    <div>
+                        <h2 id="becca-europe-heading">
+                            BECCA Europe
+                        </h2>
+                        <h3>
+                            Creative Direction
+                        </h3>
+                        <p>
+                            A complete rebrand of a pioneering arts funding consultancy with a focus on stories, not stats. I designed the visual identity and website, and wrote the website copy and monthly newsletters. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section aria-labelledby="wp-clone-heading">
+                <div class="inner">
+                    <div class="media">
+                        <img 
+                            src="/assets/images/wp_clone.webp"
+                            loading="lazy"
+                            width="1200" height="850"
+                            alt="Content from the WP Clone website" >
+                    </div>
+                    <div>
+                        <h2 id="wp-clone-heading">
+                            WP Clone
+                        </h2>
+                        <h3>
+                            Website Writing
+                        </h3>
+                        <p>
+                            Helping an SaaS start-up with a highly technical audience get their selling points across without sounding like an IT manual.
+                        </p>
+                        <hr class="dotted accent" aria-hidden="true">
+                        <span class="vh">Quote:</span>
+                        <figure aria-label="Quote">
+                            <p class="pull-quote">
+                                “Sock-rocking WordPress manage&shy;ment bundles that will make your wallet happy.”
+                            </p>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section aria-labelledby="centerfield-heading">
+                <div class="inner">
+                    <div class="media">
+                        <img 
+                            src="/assets/images/centerfield.webp"
+                            loading="lazy"
+                            width="800" height="600"
+                            alt="Photo illustration of a phishing attack"> 
+                    </div>                 
+                    <div>
+                        <h2 id="centerfield-heading">
+                            Centerfield Media
+                        </h2>
+                        <h3>
+                            Content<span class="slash">/</span>SEO Writing
+                        </h3>
+                        <p>
+                            I’ve written a lot of stories over the years — under my own name and as a ghost&shy;writer. Here are a few links to my latest work at Centerfield Media. (The little 👻 means I wrote it but you won’t see my name on it.)
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="https://www.safehome.org/home-security-cameras/turn-old-phone-into-security-camera/">How to Turn Your Old Phone Into a Home Security Camera <span class="arrow-up-rgt" aria-hidden="true">&#x2197;</span>
+                            </a>
+                            </li>
+                            <li>
+                                <a href="https://longform.maxsheridan.com/tech/porch-pirates">Is Your Home a Magnet for Porch Pirates? <span class="arrow-up-rgt" aria-hidden="true">&#x2197;</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://longform.maxsheridan.com/tech/parental-controls">Her Six-Year-Old Spent $16,000 in the App Store <span class="arrow-up-rgt" aria-hidden="true">&#x2197;</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://longform.maxsheridan.com/tech/holiday-scams">‘Twas the Night After Black Friday and the Fraudsters Were Stirring <span class="arrow-up-rgt" aria-hidden="true">&#x2197;</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.safehome.org/news/celebrity-home-security-systems/">These Celebrity Home Security Systems Will Blow Your Mind 👻 <span class="arrow-up-rgt" aria-hidden="true">&#x2197;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section aria-labelledby="longform-heading">
+                <div class="inner">
+                    <div class="media">
+                        <img 
+                            src="/assets//images/longform.webp"
+                            loading="lazy"
+                            width="1600" height="1200"
+                            alt="Photo illustration of influencers acculumating likes"> 
+                    </div>                 
+                    <div>
+                        <h2 id="longform-heading">
+                            Journalism
+                        </h2>
+                        <h3>
+                            Article Writing
+                        </h3>
+                        <p>
+                            This is a small selection of the articles I’ve written for news outlets, clients, and blogs. Read more of my work on Medium at <a href="https://medium.com/copy-cat">Copy Cat.</a>
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="https://longform.maxsheridan.com/web-writing/hype-house">Hype House: The Death of Content As We Know It <span class="arrow-up-rgt" aria-hidden="true">&#x2197;</span>
+                            </a>
+                            </li>
+                            <li>
+                                <a href="https://longform.maxsheridan.com/web-writing/storytelling">Stories Are More Memorable Than Facts: Debunking the Internet’s Most Popular Storytelling Statistic.  <span class="arrow-up-rgt" aria-hidden="true">&#x2197;</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://longform.maxsheridan.com/marketing/digital-transformation">Planning a Top-to-Bottom Digital Transformation? Ask These Three Questions First. <span class="arrow-up-rgt" aria-hidden="true">&#x2197;</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://longform.maxsheridan.com/feature/free-love-after-the-apocalypse">Free Love After the Apocalypse: The World According to Uptopos of Makounta <span class="arrow-up-rgt" aria-hidden="true">&#x2197;</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://longform.maxsheridan.com/feature/let-us-now-praise-abnormal-men">Let Us Now Praise Abnormal Men: An Interview with Uri Geller<span class="arrow-up-rgt" aria-hidden="true">&#x2197;</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="logo-container bottom">
+                            <hr class="dotted" aria-hidden="true">
+                                <svg class="logo" viewBox="0 0 100 100" aria-label="Max Sheridan logo" role="img">
+                                    <path fill="var(--primary)" d="M6.75 99.97.2 100l39.6-27.04 6.22.02zm13.51 0-6.57.03L53.3 72.96l6.21.02zm13.52 0-6.57.03 39.61-27.04 6.21.02zm13.51 0-6.57.03 39.61-27.04 6.22.02zm13.51 0-6.57.03 39.62-27.04 6.2.02z"/>
+                                    <path fill="var(--background)" d="M29.82 0H100v72.96H29.82z"/>
+                                    <path fill="var(--primary)" d="M42.75 18.74c.21 2.5.05 4.94 0 7.57l1.74-.05c1.59 0 2.6.85 2.7 3.15.21 3.53.16 10.4 0 14.02-.05 1.88-.74 2.82-2.7 2.82l-1.69-.05q.32 4 0 8c2.06-.19 16.18-.19 18.4 0 0-2.54-.15-5.46 0-8h-2.59c-1.85 0-2.64-1.12-2.7-2.91-.1-2.26-.1-4.23-.1-6.87 0-2.35-.21-5.27-.69-7.9l.59-.23c2.32 5.17 4.7 10.81 6.02 15.66 2.33-.2 3.7-.14 5.3-.1 1.16-3.67 3.7-9.87 6.18-15.61l.63.05a169.23 150.5 0 0 0-.74 15.05c0 1.78-1.16 2.91-3.01 2.91l-2.43-.05c0 2.54.16 5.37 0 8 1.9-.19 16.5-.19 19.04 0a66 66 0 0 1 0-7.9l-1.22.04c-2.38 0-3.12-1.08-3.17-2.86-.16-3.95.05-10.96.26-14.86 0-1.6 1.59-2.4 3.17-2.4l1.33.04c-.27-2.77-.22-4.84-.16-7.52-2.12.19-14.07 0-16.08 0-.53 2.07-3.33 8.93-5.71 13.4-2.38-4.23-5.08-10.96-5.4-13.4-2.38.19-14.7.19-16.92 0M0 93.26l29.92-20.42V.08L0 20.51z"/>
+                                </svg>
+                            <hr class="dotted" aria-hidden="true">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
         <script>document.addEventListener("DOMContentLoaded",()=>{const video=document.querySelector(".video-player video");const playPause=document.querySelector(".play-pause");const progress=document.querySelector(".progress input");const progressFill=document.querySelector(".progress-filled");const updatePlayPauseButton=(isPlaying)=>{playPause.className=isPlaying?"play-pause pause":"play-pause play";playPause.innerHTML=isPlaying?`<svg class="icon" viewBox="0 0 30 30"><rect x="10" y="8" width="3" height="14"></rect><rect x="17" y="8" width="3" height="14"></rect></svg>`:`<svg class="icon" viewBox="0 0 30 30"><polygon points="10,6.9 10,23.1 24,15"></polygon></svg>`};const resetVideoPlayer=()=>{video.pause();video.currentTime=0;video.load();updatePlayPauseButton(!1);progressFill.style.width="0%";progress.value=0};playPause.addEventListener("click",()=>{if(video.paused){video.play()}else{video.pause()}});video.addEventListener("play",()=>updatePlayPauseButton(!0));video.addEventListener("pause",()=>updatePlayPauseButton(!1));video.addEventListener("timeupdate",()=>{const percentage=(video.currentTime/video.duration)*100||0;progressFill.style.width=`${percentage}%`;progress.value=percentage});progress.addEventListener("input",()=>{video.currentTime=(progress.value/100)*video.duration});window.addEventListener("pageshow",()=>{resetVideoPlayer()})})</script>
     </body>
 </html>
