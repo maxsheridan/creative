@@ -1,15 +1,7 @@
 @font-face {
     font-family: 'ABCDiatype';
-    src: url(/assets/type/abcdiatype_regular.woff2) format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'ABCDiatype Semi-Mono';
-    src: url(/assets/type/abcdiatype_semi-mono_medium.woff2) format('woff2');
-    font-weight: 500;
+    src: url(/assets/type/abcdiatypevariable_plus.woff2) format('woff2');
+    font-weight: 100 700;
     font-style: normal;
     font-display: swap;
 }
@@ -26,8 +18,8 @@
     --space-4: calc(var(--space-3) * var(--ratio));
     --border: 2px dotted;
     --body: 'ABCDiatype', system-ui, sans-serif;
-    --heading: 'ABCDiatype Semi-Mono', monospace;
-    --paragraph: calc(1.13rem + .3vw);
+    --heading: 'ABCDiatype', monospace;
+    --paragraph: calc(1.15rem + .3vw);
     --primary: #161718;
     --accent: #BA1C26;
     --progress: lightgray;
@@ -123,7 +115,8 @@ header > * + *,
 
 .short-description {
     max-width: 50ch;
-    font-family: var(--paragraph);
+    font-variation-settings: 'MONO' .2;
+    font-size: calc(var(--paragraph) *.9);
 }
 
 nav {
@@ -137,6 +130,7 @@ nav li {
     align-items: center;
     padding: var(--space-2) 0;
     border-top: var(--border);
+    font-variation-settings: 'MONO' .2;
 }
 
 nav a.active {
@@ -186,7 +180,8 @@ h1,
 h2 {
     font-family: var(--heading);
     font-size: calc(var(--paragraph) * 1.7);
-    font-weight: 500;
+    font-weight: 550;
+    font-variation-settings: 'MONO' .5; 
     line-height: 1.3;
 }
 
@@ -194,6 +189,7 @@ h3 {
     font-family: var(--heading);
     font-size: calc(var(--paragraph) * 1.3);
     font-weight: 500;
+    font-variation-settings: 'MONO' .5; 
     line-height: 1.3;
     color: var(--accent);
 }
@@ -273,6 +269,7 @@ li {
     font-family: var(--heading);
     font-size: calc(var(--paragraph) * 1.1);
     font-weight: 500;
+    font-variation-settings: 'MONO' .2; 
     line-height: 1.3;
 }
 
@@ -289,12 +286,13 @@ article + article {
 .arrow-up-rgt {
     font-family: var(--body);
     font-size: 1.25em;
-    line-height: .85;
+    line-height: .8;
     vertical-align: text-bottom;
 }
 
 .arrow-up-rgt.nav-link {
-    font-size: 1.325em;
+    font-size: 1.35em;
+    line-height: .75;
 }
 
 hr.dotted {
