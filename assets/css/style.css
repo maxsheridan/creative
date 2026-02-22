@@ -253,8 +253,8 @@ li {
 }
 
 .emphasis {
-    font-family: var(--heading);
     font-weight: 500;
+    font-variation-settings: 'MONO' .25;
 }
 
 .red {
@@ -277,10 +277,11 @@ li {
     line-height: 1.3;
 }
 
-.sub-heading {
+.subheading {
     margin-block-start: var(--space-1);
     margin-block-end: var(--space-2);
     font-family: var(--heading);
+    font-variation-settings: 'MONO' .25;
 }
 
 article + article {
