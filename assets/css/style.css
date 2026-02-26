@@ -201,14 +201,13 @@ h3 {
 a {
     color: var(--primary);
     text-decoration: underline;
-    text-decoration-style:dotted;
+    text-decoration-style: dotted;
     text-decoration-thickness: 2px;
     text-decoration-color: var(--accent);
     text-underline-offset: 3px;
     text-decoration-skip-ink: all;
     pointer-events: auto;
     cursor: pointer;
-    transition: background-color .3s ease;
 }
 
 .linkstyling-off a {
@@ -223,7 +222,7 @@ a {
 
     a:not(nav a):hover {
         opacity: .7;
-        transition: color .3s ease;
+        transition: opacity .3s ease;
     }
 }
 
