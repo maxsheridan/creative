@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build CSS",
+            "type": "shell",
+            "command": "${workspaceFolder}/scripts/build-css.sh",
+            "problemMatcher": []
+        }
+    ]
+}
