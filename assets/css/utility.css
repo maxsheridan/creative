@@ -85,6 +85,10 @@ main {
     text-align: center;
 }
 
+main * + * {
+    margin-block-start: var(--space-0);
+}
+
 h1 {
     font-size: calc(var(--paragraph) * 2)
 }
@@ -104,8 +108,4 @@ a {
     a:hover {
         opacity: .7;
     }
-}
-
-main * + * {
-    margin-block-start: var(--space-0);
 }
