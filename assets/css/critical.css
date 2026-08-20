@@ -11,8 +11,6 @@
     src: local(Arial);
     size-adjust: 104%;
     ascent-override: 95%;
-    descent-override: normal;
-    line-gap-override: normal;
 }
 
 :root {
