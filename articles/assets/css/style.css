@@ -17,7 +17,7 @@
     --space-4: calc(var(--space-3) * var(--ratio));
     --max-width: 34em;
     --font: 'ABCDiatype', system-ui, sans-serif;
-    --paragraph: calc(1rem + .2vw);
+    --paragraph: calc(1.06rem + .2vw);
     --primary: #161718;
     --light: #505050;
     --lighter: #646464;

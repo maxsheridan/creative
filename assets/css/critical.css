@@ -17,7 +17,7 @@
     --space-3: calc(var(--space-2) * var(--ratio));
     --space-4: calc(var(--space-3) * var(--ratio));
     --font: 'ABCDiatype', system-ui, sans-serif;
-    --paragraph: calc(1rem + .2vw);
+    --paragraph: calc(1.06rem + .2vw);
     --border: 2px dotted #D3D3D3;
     --primary: #161718;
     --light: #505050;
@@ -137,7 +137,7 @@ section + section {
 .heading {
     max-width: 32em;
     margin-inline: auto;
-    padding-inline: 1.5rem;
+    padding-inline: 1.75rem;
 }
 
 .inner {
@@ -194,4 +194,38 @@ h3 {
     font-size: calc(var(--paragraph) * .9);
     text-transform: uppercase;
     color: var(--lighter);
+}
+
+@media (max-width:960px) {
+    .sidebar-hoodoo {
+        display: none;
+    }
+
+    .sidebar {
+        align-items: center;
+        position: relative;
+        row-gap: 2rem;
+        width: 100%;
+        height: 100%;
+        padding: var(--space-4) 0;
+        border-right: unset;
+        border-bottom: var(--border);
+    }
+
+    .site-description {
+        text-align: center;
+    }
+
+    main {
+        width: 100%;
+        padding: var(--space-3) 0 0;
+    }
+
+    img.tall {
+        max-width: min(500px, 95%);
+    }
+
+    img.x-tall {
+        max-width: min(425px, 95%);
+    }
 }
