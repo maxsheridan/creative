@@ -145,7 +145,7 @@ section + section {
 }
 
 .heading {
-    margin-block: 2.5rem;
+    margin-block-start: 2.5rem;
 }
 
 .inner.text-only * + * {
