@@ -135,7 +135,7 @@ section + section {
 
 .inner,
 .heading {
-    max-width: 32em;
+    max-width: 53ch;
     margin-inline: auto;
     padding-inline: 1.75rem;
 }
