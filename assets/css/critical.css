@@ -193,6 +193,7 @@ h3 {
 .label {
     font-size: calc(var(--paragraph) * .9);
     text-transform: uppercase;
+    letter-spacing: .015em;
     color: var(--lighter);
 }
 
