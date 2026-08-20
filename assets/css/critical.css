@@ -6,6 +6,15 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Fallback';
+    src: local(Arial);
+    size-adjust: 104%;
+    ascent-override: 95%;
+    descent-override: normal;
+    line-gap-override: normal;
+}
+
 :root {
     --ratio: 1.45;
     --space--3: calc(var(--space--2) / var(--ratio));
@@ -16,7 +25,7 @@
     --space-2: calc(var(--space-1) * var(--ratio));
     --space-3: calc(var(--space-2) * var(--ratio));
     --space-4: calc(var(--space-3) * var(--ratio));
-    --font: 'ABCDiatype', system-ui, sans-serif;
+    --font: 'ABCDiatype','Fallback', system-ui, sans-serif;
     --paragraph: calc(1.06rem + .2vw);
     --border: 2px dotted #D3D3D3;
     --primary: #161718;
@@ -135,7 +144,7 @@ section + section {
 
 .inner,
 .heading {
-    max-width: 53ch;
+    max-width: 33em;
     margin-inline: auto;
     padding-inline: 1.75rem;
 }
