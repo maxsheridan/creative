@@ -1,5 +1,4 @@
 .pull-quote {
-    font-family: var(--heading);
     font-size: calc(var(--paragraph) * 1.1);
     font-weight: 600;
     line-height: 1.4;
