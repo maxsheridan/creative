@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'ABCDiatype';
+    src: url(/assets/type/abcdiatypevariable_plus.woff2) format('woff2');
+    font-weight: 100 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --ratio: 1.45;
+    --space--3: calc(var(--space--2) / var(--ratio));
+    --space--2: calc(var(--space--1) / var(--ratio));
+    --space--1: calc(var(--space-0) / var(--ratio));
+    --space-0: calc(1rem + 1vw); 
+    --space-1: calc(var(--space-0) * var(--ratio));
+    --space-2: calc(var(--space-1) * var(--ratio));
+    --space-3: calc(var(--space-2) * var(--ratio));
+    --space-4: calc(var(--space-3) * var(--ratio));
+    --font: 'ABCDiatype', system-ui, sans-serif;
+    --paragraph: calc(1.06rem + .2vw);
+    --border: 2px dotted #D3D3D3;
+    --primary: #161718;
+    --light: #505050;
+    --lighter: #646464;
+    --icon-fill: #008000;
+    --progress: #D3D3D3;
+    --background: #EAE8E3;
+}
+
+@media(prefers-color-scheme:dark) {
+    :root {
+    --border: 2px dotted #636363;
+    --primary: #D3CEC1;
+    --light: #9B9B9B;
+    --lighter: #9B9B9B;
+    --icon-fill: #77E477;
+    --progress: var(--primary);
+    --background: #161718;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: none;
+}
+
+html {
+    font-size: 16px;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: #fff0;
+    overscroll-behavior: none;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    font-family: var(--font);
+    font-size: var(--paragraph);
+    font-weight: 400;
+    font-variation-settings: 'MONO' .2;
+    line-height: 1.6;
+    color: var(--primary);
+    background-color: var(--background);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+    margin: unset;
+    padding: unset;
+    text-align: center;
+}
+
+h1 {
+    font-size: calc(var(--paragraph) * 2)
+}
+
+a {
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: var(--light);
+    text-underline-offset: 3px;
+    text-decoration-skip-ink: all;
+    transition: opacity .3s ease;
+}
+
+@media (hover:hover) and (pointer:fine) {
+    a:hover {
+        opacity: .7;
+    }
+}
+
+* + * {
+    margin-block-start: var(--space-0);
+}

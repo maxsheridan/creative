@@ -201,20 +201,3 @@ video {
         opacity: .7;
     }
 }
-
-.utility main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-    min-height: 100dvh;
-    margin: unset;
-    padding: unset;
-    text-align: center;
-}
-
-.utility h1 {
-    font-size: calc(var(--paragraph) * 2)
-}
