@@ -23,8 +23,14 @@ write_minified_css() {
     temporary_file=$(mktemp "${TMPDIR:-/tmp}/creative-css.XXXXXX")
     trap 'rm -f "$temporary_file"' EXIT INT TERM
     minify_css "$source_file" > "$temporary_file"
+    if cmp -s "$temporary_file" "$output_file"; then
+        rm -f "$temporary_file"
+        trap - EXIT INT TERM
+        return
+    fi
     mv "$temporary_file" "$output_file"
     trap - EXIT INT TERM
+    printf '%s\n' "${output_file#"$ROOT_DIR"/}"
 }
 
 update_critical_css() {
@@ -87,11 +93,17 @@ update_utility_css() {
 }
 
 build() {
-    update_critical_css
-    update_utility_css
-    write_minified_css "$ROOT_DIR/assets/css/style.css" "$ROOT_DIR/assets/css/style.min.css"
-    write_minified_css "$ROOT_DIR/articles/assets/css/style.css" "$ROOT_DIR/articles/assets/css/style.min.css"
-    printf '%s\n' "CSS updated."
+    updated_files=$(
+        update_critical_css
+        update_utility_css
+        write_minified_css "$ROOT_DIR/assets/css/style.css" "$ROOT_DIR/assets/css/style.min.css"
+        write_minified_css "$ROOT_DIR/articles/assets/css/style.css" "$ROOT_DIR/articles/assets/css/style.min.css"
+    )
+    if [ -n "$updated_files" ]; then
+        printf 'CSS updated:\n%s\n' "$updated_files"
+    else
+        printf '%s\n' "No files updated."
+    fi
 }
 
 file_mtime() {
