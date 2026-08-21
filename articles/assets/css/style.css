@@ -15,7 +15,6 @@
     --space-2: calc(var(--space-1) * var(--ratio));
     --space-3: calc(var(--space-2) * var(--ratio));
     --space-4: calc(var(--space-3) * var(--ratio));
-    --max-width: 34em;
     --font: 'ABCDiatype', system-ui, sans-serif;
     --paragraph: calc(1.06rem + .2vw);
     --primary: #161718;
@@ -56,7 +55,7 @@ body {
     font-size: var(--paragraph);
     font-weight: 400;
     font-style: normal;
-    line-height: 1.6;
+    line-height: 1.65;
     color: var(--primary);
     background-color: var(--background);
 }
@@ -81,7 +80,7 @@ p + p {
 }
 
 .words-inner {
-    max-width: var(--max-width);
+    max-width: 33em;
     padding: 4rem 1.5rem;
 }
 
@@ -215,4 +214,9 @@ hr {
     width: 1.5em;
     height: auto;
     margin-block: var(--space-1);
+}
+
+sup {
+    font-size: calc(var(--paragraph) * .75);
+    color: var(--lighter);
 }
