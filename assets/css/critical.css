@@ -229,13 +229,6 @@ h3 {
     letter-spacing: .015em;
 }
 
-.label {
-    font-size: calc(var(--paragraph) * .9);
-    text-transform: uppercase;
-    letter-spacing: .015em;
-    color: var(--lighter);
-}
-
 @media (max-width:960px) {
     .sidebar-hoodoo {
         display: none;

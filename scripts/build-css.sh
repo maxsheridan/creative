@@ -37,7 +37,7 @@ update_critical_css() {
     temporary_file=$(mktemp "${TMPDIR:-/tmp}/creative-critical.XXXXXX")
     trap 'rm -f "$temporary_file"' EXIT INT TERM
     minify_css "$CRITICAL_CSS" > "$temporary_file"
-    CRITICAL_FILE="$temporary_file" INDEX_FILE="$INDEX_HTML" perl -0e '
+    CRITICAL_FILE="$temporary_file" INDEX_FILE="$INDEX_HTML" ROOT_DIR="$ROOT_DIR" perl -0e '
         open my $critical_fh, "<", $ENV{CRITICAL_FILE} or die "$!\n";
         local $/;
         my $critical_css = <$critical_fh>;
@@ -50,9 +50,16 @@ update_critical_css() {
         my $replaced = $index_html =~ s{(<style id="critical-css">).*?(</style>)}{$1 . $critical_css . $2}se;
         die "Could not find <style id=\"critical-css\"> in $ENV{INDEX_FILE}\n" unless $replaced;
 
+        exit 0 if $index_html eq do {
+            open my $current_fh, "<", $ENV{INDEX_FILE} or die "$!\n";
+            local $/;
+            <$current_fh>;
+        };
+
         open my $output_fh, ">", $ENV{INDEX_FILE} or die "$!\n";
         print {$output_fh} $index_html;
         close $output_fh;
+        print "${\( $ENV{INDEX_FILE} =~ s{\Q$ENV{ROOT_DIR}/\E}{}r )}\n";
     '
     rm -f "$temporary_file"
     trap - EXIT INT TERM
