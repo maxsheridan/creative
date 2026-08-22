@@ -168,7 +168,7 @@ section + section {
 
 .media {
     display: flex;
-    margin-block-end: var(--space-2);
+    margin-block-end: var(--space-3);
 }
 
 img {
