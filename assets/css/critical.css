@@ -125,7 +125,7 @@ li {
     color: var(--light);
 }
 
-.contact-icon {
+.info-icon {
     width: .9em;
     height: auto;
     stroke: var(--light);
@@ -133,7 +133,7 @@ li {
     fill: none;
 }
 
-.contact-icon.fill {
+.info-icon.fill {
     stroke: none;
     fill: var(--icon-fill);
 }
@@ -213,8 +213,20 @@ h3 {
     line-height: 1.5;
 }
 
-.project-info > * + * {
+.project-info * + * {
     margin-block-start: var(--space--1);
+}
+
+.project-info dt,
+.project-info dd {
+    display: inline;
+}
+
+.project-info dt {
+    color: var(--lighter);
+    font-size: calc(var(--paragraph) * .9);
+    text-transform: uppercase;
+    letter-spacing: .015em;
 }
 
 .label {
