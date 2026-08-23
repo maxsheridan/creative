@@ -63,9 +63,6 @@ body {
 main {
     display: flex;
     justify-content: center;
-    height: 100vh;
-    height: 100dvh;
-    overflow-y: auto;
     overscroll-behavior: none;
     background-color: var(--background);
 }
@@ -75,12 +72,12 @@ p + p {
     margin-block-start: var(--space-1);
 }
 
-.words-inner * + *:not(p):not(span):not(.references li):not(svg) {
+.words * + *:not(p):not(span):not(.references li):not(svg) {
     margin-block-start: var(--space-3);
 }
 
-.words-inner {
-    max-width: 33em;
+.words {
+    max-width: 33.5em;
     padding: 4rem 1.5rem;
 }
 
@@ -130,7 +127,7 @@ h3 {
     margin: .5rem 0 0 0;
     padding: 0 .5rem 0 0;
     font-size: 5em;
-    font-weight: bold;
+    font-weight: 700;
     line-height: .8em;
     color: var(--primary);
 }
