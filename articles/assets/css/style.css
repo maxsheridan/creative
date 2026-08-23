@@ -63,6 +63,8 @@ body {
 main {
     display: flex;
     justify-content: center;
+    max-width: 32em;
+    margin-inline: auto;
     overscroll-behavior: none;
     background-color: var(--background);
 }
@@ -77,7 +79,6 @@ p + p {
 }
 
 .words {
-    max-width: 33.5em;
     padding: 4rem 1.5rem;
 }
 
