@@ -127,7 +127,7 @@ h3 {
 
 .dropcap::first-letter {
     float: left;
-    padding: .4rem .5rem .75rem 0;
+    padding: .5rem .5rem .75rem 0;
     font-size: 7rem;
     font-weight: bold;
     line-height: 5rem;
