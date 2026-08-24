@@ -69,8 +69,7 @@ main {
     background-color: var(--background);
 }
 
-article * + *:not(svg), 
-p + p {
+article * + p {
     margin-block-start: var(--space-1);
 }
 
