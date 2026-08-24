@@ -162,6 +162,10 @@ b {
     list-style-position: inside;
 }
 
+.references li + li {
+    margin-block-start: var(--space-1);
+}
+
 .blockquote {
     margin-inline-start: .15rem;
     margin-block-end: var(--space-2);
