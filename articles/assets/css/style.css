@@ -69,11 +69,12 @@ main {
     background-color: var(--background);
 }
 
-article *:not(div) + p {
+article *:not(div) + p,
+article li + li {
     margin-block-start: var(--space-1);
 }
 
-article * + *:not(div *) {
+article * + *:not(div *):not(p) {
     margin-block-start: var(--space-3);
 }
 
@@ -160,10 +161,6 @@ b {
 .fancy-pants-list {
     list-style: decimal;
     list-style-position: inside;
-}
-
-.references li + li {
-    margin-block-start: var(--space-1);
 }
 
 .blockquote {
