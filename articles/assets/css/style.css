@@ -70,11 +70,11 @@ main {
 }
 
 article *:not(div) + p,
-article li + li {
+article .references li + li {
     margin-block-start: var(--space-1);
 }
 
-article * + *:not(div *):not(p) {
+article * + *:not(div *) {
     margin-block-start: var(--space-3);
 }
 
