@@ -121,6 +121,16 @@ ol.h3 > li::marker  {
     height: auto;
 }
 
+.info circle {
+    fill: yellow;
+    stroke: currentColor;
+    stroke-width: 2.5;
+}
+
+.info path {
+    fill: currentColor;
+}
+
 .dropcap::first-letter {
     float: left;
     margin: .5rem 0 0 0;
