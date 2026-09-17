@@ -18,20 +18,16 @@
     --font: 'ABCDiatype', system-ui, sans-serif;
     --paragraph: calc(1.06rem + .2vw);
     --primary: #161718;
-    --light: #505050;
-    --lighter: #646464;
-    --highlight: #FFFF00;
-    --quote-border: #D3D3D3;
+    --light: #4C4C4C;
+    --quote-border: var(--primary);
     --background: #EAE8E3;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --primary: #D3CEC1; 
-        --light: #A2A2A2;
-        --lighter: #A4A4A4;
-        --quote-border: var(--light);
-        --highlight: transparent;
+        --light: #A4A4A4;
+        --quote-border: var(--primary);
         --background: #161718;
     }
 }
@@ -109,7 +105,7 @@ ol.h3 > li::marker  {
 
 .description {
     font-size: calc(var(--paragraph) * 1.1);
-    color: var(--lighter);
+    color: var(--light);
 }
 
 .info {
@@ -124,7 +120,7 @@ ol.h3 > li::marker  {
 }
 
 .info circle {
-    fill: var(--highlight);
+    fill: none;
     stroke: currentColor;
     stroke-width: 2.5;
 }
@@ -149,7 +145,7 @@ a {
     color: var(--primary);
     text-decoration: underline;
     text-decoration-thickness: 2px;
-    text-decoration-color: var(--lighter);
+    text-decoration-color: var(--light);
     text-decoration-skip-ink: all;
     text-underline-offset: 2px;
     transition: opacity .3s ease;
@@ -225,5 +221,5 @@ hr {
 
 sup {
     font-size: calc(var(--paragraph) * .75);
-    color: var(--lighter);
+    color: var(--light);
 }
