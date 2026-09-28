@@ -36,7 +36,7 @@
     --primary: #161718;
     --light: #505050;
     --lighter: #646464;
-    --icon-fill: #008000;
+    --icon-fill: #E65400;
     --progress: #D3D3D3;
     --background: #EAE8E3;
 }
@@ -47,7 +47,7 @@
     --primary: #D3CEC1;
     --light: #9B9B9B;
     --lighter: #9B9B9B;
-    --icon-fill: #77E477;
+    --icon-fill: #E65400;
     --progress: var(--primary);
     --background: #161718;
     }
